@@ -189,6 +189,13 @@ class DatabaseSeeder extends Seeder
             'button' => 'Explore Our Programs'
         ]);
 
+        Homepage::create([
+            'judul_hitam' => 'DentsLearn:',
+            'judul_putih' => 'Hands On',
+            'desk' => 'Dapatkan ilmu-ilmu baru seputar kedokteran gigi dan kembangkan skill kedokteran gigimu di DentsLearn: Hands On! Hands On juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga. ',
+            'button' => 'Lihat Hands On Bulan Ini!'
+        ]);
+
         About::create([
             'nama' => 'Internship Program',
             'slug' => 'internship-program'

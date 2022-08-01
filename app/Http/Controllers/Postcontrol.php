@@ -33,4 +33,22 @@ class Postcontrol extends Controller
            "articles" => Article::content()]);
 
     }
+
+    public function dentslearn ()
+    {
+        return view('dentslearn.dentslearn', [
+            "title" => "DENTS.TALK",
+            "hireds" => Hired::content(),
+            "joins" => Join::content(),
+            "programs" => Program::content(),
+            "help" => Help::content(),
+            "review" => Review::content(),
+ #           "reviews_2" => Review::review2(),
+            "options" => Option::content(),
+
+            'aboutjudul'=>Aboutjudul::content(),
+            "homepage" => Homepage::content(),
+           "articles" => Article::content()]);
+
+    }
 }

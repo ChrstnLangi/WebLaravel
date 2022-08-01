@@ -1,6 +1,6 @@
 @inject('about', 'App\Models\About')
 
-<div data-collapse="medium" data-animation="default" data-duration="200" data-easing="ease-in-out" data-easing2="ease-in-out" data-doc-height="1" role="banner" class="nav_component new-bacground new w-nav">
+<div data-collapse="medium" data-animation="default" data-duration="200" data-easing="ease-in-out" data-easing2="ease-in-out" data-doc-height="1" role="banner" class="nav_component new-bacground new w-nav" style="padding-bottom: 5%">
     <div class="page-padding">
       <div class="nav_container"><a href="/" aria-current="page" class="nav_logo-link w-nav-brand w--current"><img src="/Assets/13_20220719_015826_0012.png" loading="lazy" alt="" class="nav_logo new" /></a>
         <nav role="navigation" class="nav_menu w-nav-menu">

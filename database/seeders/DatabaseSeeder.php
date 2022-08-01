@@ -6,14 +6,16 @@ use App\Models\Help;
 use App\Models\Join;
 use App\Models\User;
 use App\Models\About;
-use App\Models\Aboutgambar;
-use App\Models\Aboutjudul;
 use App\Models\Hired;
 use App\Models\Option;
 use App\Models\Review;
 use App\Models\Article;
 use App\Models\Program;
 use App\Models\Homepage;
+use App\Models\Aboutdesk;
+use App\Models\Aboutjudul;
+use App\Models\Aboutgambar;
+use App\Models\Aboutreview;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -224,102 +226,132 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Aboutgambar::create([
-            'judul_id' => 1,
+            'aboutjudul_id' => 1,
             'background' => 1,
             'img' => '/Assets/20220728_193418_0000.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 3,
+            'aboutjudul_id' => 3,
             'background' => 1,
             'img' => '/Assets/20220728_193418_0001.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 3,
+            'aboutjudul_id' => 3,
             'background' => 0,
-            'review_id' => 1,
+            'aboutreview_id' => 1,
             'img' => '/Assets/dummy_1.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 3,
+            'aboutjudul_id' => 3,
             'background' => 0,
-            'review_id' => 2,
+            'aboutreview_id' => 2,
             'img' => '/Assets/dummy_2.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 3,
+            'aboutjudul_id' => 3,
             'background' => 0,
-            'review_id' => 3,
+            'aboutreview_id' => 3,
             'img' => '/Assets/dummy_3.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 4,
+            'aboutjudul_id' => 4,
             'background' => 0,
             'img' => '/Assets/20220728_193418_0000.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_1.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_2.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_3.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_4.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_4.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_3.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_2.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_1.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 1,
             'img' => '/Assets/20220728_193418_0002.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 0,
             'img' => '/Assets/dummy_1.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 0,
             'img' => '/Assets/dummy_2.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 0,
             'img' => '/Assets/dummy_3.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 0,
             'img' => '/Assets/dummy_4.png'
         ]);
+
+        Aboutdesk::create([
+            'aboutjudul_id' => 1,
+            'text' => "Gabung Sekarang!",
+        ]);
+        Aboutdesk::create([
+            'aboutjudul_id' => 2,
+            'text' => "Halo teman-teman mahasiswa kedokteran gigi maupun non kedokteran gigi yang ingin mengembangkan minat dan kreativitas kalian, yuk bergabung bersama DENTS.TALK melalui program internship kami yaitu “DentsArmy”. Disini kamu bisa memilih departemen yang sesuai dengan keminatan kamu loh! Yuk disimak departemen apa saja yang bisa kamu pilih.",
+        ]);
+        Aboutdesk::create([
+            'aboutjudul_id' => 6,
+            'text' => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam commodi velit dolore deserunt neque, asperiores culpa, excepturi exercitationem accusamus eveniet dolorum? Praesentium iusto natus quis dolore illum quas laborum.",
+        ]);
+
+        Aboutreview::create([
+            'text' => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.",
+            'nama' => "Lorem ipsum",
+            'role' => "dolor sit"
+        ]);
+        Aboutreview::create([
+            'text' => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.",
+            'nama' => "Dolor sit",
+            'role' => "Lorem ipsum"
+        ]);
+        Aboutreview::create([
+            'text' => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.",
+            'nama' => "Dolor sit",
+            'role' => "Lorem ipsum"
+        ]);
+
     }
 }

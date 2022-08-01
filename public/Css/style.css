@@ -2014,7 +2014,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    }
 
    .nav_component.new-bacground.new {
-     max-height: 65px;
+     max-height: 98px;
      min-height: 65px;
      padding-top: 0.5rem;
      padding-bottom: 0.5rem;
@@ -2132,7 +2132,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 13rem;
+    padding-top: 8rem;
     padding-bottom: 6.5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3072,13 +3072,16 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
      object-fit: cover;
    }
 
-   .section-testimonials1 {
+   .section-review {
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url("20220728_185446_0002.png");
     background-color: #fff;
      overflow: hidden;
    }
+
+
+
+
 
    .testimonials1_arrow {
      position: absolute;

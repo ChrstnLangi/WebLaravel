@@ -15,9 +15,9 @@ class CreateAboutreviewsTable extends Migration
     {
         Schema::create('aboutreviews', function (Blueprint $table) {
             $table->id();
-            $table->string('text');
+            $table->longText('text');
             $table->string('nama');
-            $table->string('role');
+            $table->longText('role');
             $table->timestamps();
         });
     }

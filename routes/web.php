@@ -33,7 +33,7 @@ Route::get('/dashboard', function(){
 Route::get('/about/{About:slug}', function(About $About){
     return view('about.internship', [
         'title' => $About -> nama,
-        'judul' => $About -> Aboutjudul,
+        'judul' => $About -> Aboutjudul->load('About'),
         'slug' => $About -> slug
     ]);
 });

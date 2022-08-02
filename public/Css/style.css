@@ -88202,7 +88202,33 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
      font-display: swap;
    }
 
-   @media (min-width:992px) {
+
+
+   @media (min-width:992px) and (max-width:1439px) {
+    .button-tertiary.is-cta-button {
+    margin-bottom: 1rem;
+    width: 20.5rem;
+    height: 6.5rem;
+    font-size: 25.5131px;
+    }
+    .homepage-header_top-text-background {
+        position: absolute;
+        top: 151px;
+        right: 151px;
+        width: 432px;
+        height: 73px;
+        border-radius: 15px;
+        background-color: #000;
+    }
+
+    .text-block{
+        font-size: 18px;
+    }
+
+    .homepage-header_heading-wrapper{
+        max-width: 60rem;
+    }
+
     html.w-mod-js:not(.w-mod-ix) [data-w-id="97624f1c-fdab-65d4-f975-6c53d31797a0"] {
       opacity: 0;
     }
@@ -88434,32 +88460,4 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     }
   }
 
-  .section-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 8rem;
-    padding-bottom: 6.5rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
 
-  .arrow {
-    width: 100%;
-    height: 100%;
-    stroke: #83d2d9;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-  }

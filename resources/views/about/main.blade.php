@@ -6,8 +6,8 @@
     <title>{{ $title }}</title>
     <link href="/Css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-    <link href="Assets/dents.talk-rounf.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="Assets/dents.talk-rounf.png" rel="apple-touch-icon" />
+    <link href="/Assets/dents.talk-rounf.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="/Assets/dents.talk-rounf.png" rel="apple-touch-icon" />
     <script src="/Js/script.js"> </script>
     <script src="//pixel.convertize.io/10320.js" charset="UTF-8"></script>
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-MHH3LQC"></script>

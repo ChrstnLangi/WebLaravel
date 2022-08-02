@@ -2,23 +2,21 @@
 
 namespace App\Models;
 
-use App\Models\Aboutjudul;
+use App\Models\Page;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class About extends Model
+class Web extends Model
 {
     use HasFactory;
-    protected $guarded =['id'];
-
     public static function content()
     {
         return self::all();
     }
 
-    public function Aboutjudul()
+    public function Page()
     {
-        return $this->hasMany(Aboutjudul::class);
+        return $this->hasMany(Page::class);
     }
 
     public function getRouteKeyName()

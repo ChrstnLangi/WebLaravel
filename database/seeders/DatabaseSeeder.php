@@ -196,6 +196,34 @@ class DatabaseSeeder extends Seeder
             'button' => 'Lihat Hands On Bulan Ini!'
         ]);
 
+        Homepage::create([
+            'judul_hitam' => 'DentsLearn:',
+            'judul_putih' => 'Webinar',
+            'desk' => 'Ketahui sudut pandang dari narasumber yang berkompeten dalam menunjang karir dan pendidikan di kedokteran gigi. Webinar juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.',
+            'button' => 'Lihat Webinar On Bulan Ini!'
+        ]);
+
+        Homepage::create([
+            'judul_hitam' => 'DentsPractice',
+            'judul_putih' => 'COMING SOON!',
+            'desk' => ' ',
+            'button' => ' '
+        ]);
+
+        Homepage::create([
+            'judul_hitam' => 'DENTS.TALK',
+            'judul_putih' => ' ',
+            'desk' => 'Berkontribusi langsung meningkatkan mutu dunia kedokteran gigi Indonesia dalam mendukung visi misi kedokteran gigi Indonesia',
+            'button' => ' '
+        ]);
+
+        Homepage::create([
+            'judul_hitam' => 'DENTS.TALK',
+            'judul_putih' => 'Articles',
+            'desk' => ' ',
+            'button' => ' '
+        ]);
+
         About::create([
             'nama' => 'Internship Program',
             'slug' => 'internship-program'

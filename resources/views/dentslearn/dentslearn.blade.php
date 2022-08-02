@@ -2,7 +2,7 @@
 
 @section('contain')
 <header>
-  <div style="background-image: url('/Assets/20220728_193425_0000.png'); background-repeat: no-repeat">
+  <div style="background-image: url('/Assets/20220728_193425_0000.png'); background-size: cover;background-repeat: no-repeat">
     <div class="section-header">
       <div class="page-padding">
         <div class="container-large">
@@ -30,5 +30,5 @@
 
 @include('dentslearn.webinar')
 @include('dentslearn.slide')
-@include('home8')
+@include('home8_2')
 @endsection

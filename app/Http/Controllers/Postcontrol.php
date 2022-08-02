@@ -49,6 +49,73 @@ class Postcontrol extends Controller
             'aboutjudul'=>Aboutjudul::content(),
             "homepage" => Homepage::content(),
            "articles" => Article::content()]);
+    }
 
+    public function webinar ()
+    {
+        return view('webinar.webinar', [
+            "title" => "DENTS.TALK",
+            "hireds" => Hired::content(),
+            "joins" => Join::content(),
+            "programs" => Program::content(),
+            "help" => Help::content(),
+            "review" => Review::content(),
+ #           "reviews_2" => Review::review2(),
+            "options" => Option::content(),
+
+            'aboutjudul'=>Aboutjudul::content(),
+            "homepage" => Homepage::content(),
+           "articles" => Article::content()]);
+    }
+
+    public function dentsprac ()
+    {
+        return view('dentspractice.dentsprac', [
+            "title" => "DENTS.TALK",
+            "hireds" => Hired::content(),
+            "joins" => Join::content(),
+            "programs" => Program::content(),
+            "help" => Help::content(),
+            "review" => Review::content(),
+ #           "reviews_2" => Review::review2(),
+            "options" => Option::content(),
+
+            'aboutjudul'=>Aboutjudul::content(),
+            "homepage" => Homepage::content(),
+           "articles" => Article::content()]);
+    }
+
+    public function profile ()
+    {
+        return view('profile.profile', [
+            "title" => "DENTS.TALK",
+            "hireds" => Hired::content(),
+            "joins" => Join::content(),
+            "programs" => Program::content(),
+            "help" => Help::content(),
+            "review" => Review::content(),
+ #           "reviews_2" => Review::review2(),
+            "options" => Option::content(),
+
+            'aboutjudul'=>Aboutjudul::content(),
+            "homepage" => Homepage::content(),
+           "articles" => Article::content()]);
+    }
+
+    public function article ()
+    {
+        return view('article.article', [
+            "title" => "DENTS.TALK",
+            "hireds" => Hired::content(),
+            "joins" => Join::content(),
+            "programs" => Program::content(),
+            "help" => Help::content(),
+            "review" => Review::content(),
+ #           "reviews_2" => Review::review2(),
+            "options" => Option::content(),
+
+            'aboutjudul'=>Aboutjudul::content(),
+            "homepage" => Homepage::content(),
+           "articles" => Article::content()]);
     }
 }

@@ -47,4 +47,8 @@ Route::post('/register', [Registercontrol::class, 'store']);
 
 Route::resource('/dashboard/home/section_1', Dashboardhomesection_1::class)->middleware('auth');
 
-
+Route::get('/dentslearn', [Postcontrol::class, 'dentslearn']);;
+Route::get('/webinar', [Postcontrol::class, 'webinar']);;
+Route::get('/dentspractice', [Postcontrol::class, 'dentsprac']);;
+Route::get('/company-profile', [Postcontrol::class, 'profile']);;
+Route::get('/articles', [Postcontrol::class, 'article']);;

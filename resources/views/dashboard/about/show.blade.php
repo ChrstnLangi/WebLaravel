@@ -1,7 +1,7 @@
 @extends('dashboard.dashboard')
 
 @section('contain')
-<link href="/Css/style.css" rel="stylesheet" type="text/css" />
+<link href="/Css/all_style.css" rel="stylesheet" type="text/css" />
 <script src="/Js/script.js"> </script>
 <header>
 <div style="background-image: url('{{ $about->Aboutjudul[0]->Aboutgambar[0]->img }}'); background-size: cover;">

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ $title }}</title>
-    <link href="/Css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/Css/all_style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <link href="/Assets/dents.talk-rounf.png" rel="shortcut icon" type="image/x-icon" />
     <link href="/Assets/dents.talk-rounf.png" rel="apple-touch-icon" />

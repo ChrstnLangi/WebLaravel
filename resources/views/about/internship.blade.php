@@ -2,8 +2,8 @@
 
 @section('contain')
 <header>
-<div style="background-image: url('{{ $judul[0]->Aboutgambar[0]->load('Aboutjudul')->img }}'); background-size: cover;">
-<div class="section-header">
+<div style="background-image: url('{{ $judul[0]->Aboutgambar[0]->load('Aboutjudul')->img }}'); background-size: cover; background-position:center;">
+<div class="section-header" style = "padding-top: 8rem; padding-bottom: 6.5rem">
     <div class="page-padding">
       <div class="container-large">
         <div class="padding-vertical padding-large is-custom-padding">
@@ -52,7 +52,7 @@
 
 
 <div>
-    <div class="section-review" style="background-image: url('{{ $judul[2]->Aboutgambar->load('Aboutjudul')->where('background',1)[0]->img }}'); background-size: cover;">
+    <div class="section-review" style="background-image: url('{{ $judul[2]->Aboutgambar->load('Aboutjudul')->where('background',1)[0]->img }}'); background-size: cover; background-position:center;">
         <div class="page-padding" style = "
         width: 100%;
         max-width: 77rem;
@@ -236,7 +236,7 @@
     </div>
 </div>
 
-<div style="background-image: url('{{ $judul[5]->Aboutgambar[0]->load('Aboutjudul')->img }}'); background-size: cover;">
+<div style="background-image: url('{{ $judul[5]->Aboutgambar[0]->load('Aboutjudul')->img }}'); background-size: cover; background-position:center;">
   <div class="section-header">
       <div class="page-padding" style = "
       margin-right: auto;

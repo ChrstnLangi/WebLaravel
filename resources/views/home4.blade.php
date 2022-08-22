@@ -10,14 +10,15 @@
             </div>
           </div>
           <div class="padding-vertical padding-large">
-            <div data-w-id="50b7de01-cde7-83ac-4864-6da0f131ca98" style="opacity:0" class="our-programs_component">
-              <div class="w-layout-grid our-programs_list new">
+
+            <div data-w-id="50b7de01-cde7-83ac-4864-6da0f131ca98" style="opacity:0" class="our-programs_component container">
+              <div class="row">
                 @foreach ( $programs as $program)
-                <div id="w-node-a42de7b5-0d35-d0fa-e394-2cc3ed1bc063-2897c137" class="our-programs_item">
-                    <div class="our-programs_image-wrapper"><img src={{ $program["img"] }} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 33vw, (max-width: 1439px) 29vw, 370px" alt="" class="our-programs_image" /></div>
+                <div id="w-node-a42de7b5-0d35-d0fa-e394-2cc3ed1bc063-2897c137" class="our-programs_item col-sm" style="margin-right: 10px; margin-top: 10px">
+                    <div class="our-programs_image-wrapper mx-auto"><img src={{ $program["img"] }} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 33vw, (max-width: 1439px) 29vw, 370px" alt="" class="our-programs_image" /></div>
                     <div class="our-programs-wrapper">
                       <div class="our-programs_content">
-                        <h3 class="our-programs_heading">{{ $program["judul"] }}</h3>
+                        <h3 class="our-programs_heading mx-auto" style="max-width: 80%; padding-left:0;">{{ $program["judul"] }}</h3>
                         <div class="margin-vertical margin-small">
                           <div class="paragraph homepage">{{ $program["desk"] }}</div>
                         </div>
@@ -30,6 +31,7 @@
                 @endforeach
               </div>
             </div>
+
           </div>
         </div>
       </div>

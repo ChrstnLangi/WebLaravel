@@ -1,5 +1,5 @@
-@inject('programs', 'App\Models\Program')
-@inject('articles', 'App\Models\Article')
+@inject('about', 'App\Models\About')
+@inject('web', 'App\Models\Web')
 
 <div class="footer">
     <div class="page-padding">
@@ -10,18 +10,24 @@
               <div class="footer2_content">
                 <div class="footer2_content-left"><a href="/" aria-current="page" class="footer_logo-link-block w-inline-block w--current"><img src="/Assets/dents.talk-rounf.png" loading="lazy" alt="" class="foote_logo" /></a></div>
                 <div class="footer2_content-right _5-column">
-                <div class="footer2_links-col">
-                    <div class="text-weight-bold text-style-allcaps">Courses</div>
-                    @foreach ($programs->content() as $link)
-                    <div class="footer2_links-list"><a href="/{{ $link["link"] }}" class="footer2_link-2">{{ $link["judul"] }}</a></div>
+                    @foreach ($web->content()->skip(1) as $web)
+                    @if ($web->judul=="Article")
+                    <div class="footer2_links-col">
+                        <a href="/{{ $web->judul }}" class="text-weight-bold text-style-allcaps">{{ $web->judul }}</a>
+                    </div>
+                    @else
+                    <div class="footer2_links-col">
+                        <div class="text-weight-bold text-style-allcaps">{{ $web->judul }}</div>
+                        @foreach ($web->Page as $page)
+                        <div class="footer2_links-list"><a href="/{{ $web->judul }}/{{ $page->slug }}" class="footer2_link-2">{{ $page->judul }}</a></div>
+                        @endforeach
+                    </div>
+                    @endif
+
                     @endforeach
-                </div>
-                <div class="footer2_links-col">
-                    <div class="text-weight-bold text-style-allcaps">Articles</div>
-                    @foreach ($articles->content() as $link)
-                    <div class="footer2_links-list"><a href="/{{ $link["link"] }}" class="footer2_link-2">{{ $link["judul"] }}</a></div>
-                    @endforeach
-                </div>
+
+
+
                 </div>
               </div>
             </div>

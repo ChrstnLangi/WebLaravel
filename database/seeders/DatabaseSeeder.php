@@ -6,14 +6,20 @@ use App\Models\Help;
 use App\Models\Join;
 use App\Models\User;
 use App\Models\About;
-use App\Models\Aboutgambar;
-use App\Models\Aboutjudul;
 use App\Models\Hired;
 use App\Models\Option;
 use App\Models\Review;
 use App\Models\Article;
 use App\Models\Program;
 use App\Models\Homepage;
+use App\Models\Aboutdesk;
+use App\Models\Aboutjudul;
+use App\Models\Aboutgambar;
+use App\Models\Aboutreview;
+use App\Models\Gambar;
+use App\Models\Page;
+use App\Models\Text;
+use App\Models\Web;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -189,41 +195,6 @@ class DatabaseSeeder extends Seeder
             'button' => 'Explore Our Programs'
         ]);
 
-        Homepage::create([
-            'judul_hitam' => 'DentsLearn:',
-            'judul_putih' => 'Hands On',
-            'desk' => 'Dapatkan ilmu-ilmu baru seputar kedokteran gigi dan kembangkan skill kedokteran gigimu di DentsLearn: Hands On! Hands On juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga. ',
-            'button' => 'Lihat Hands On Bulan Ini!'
-        ]);
-
-        Homepage::create([
-            'judul_hitam' => 'DentsLearn:',
-            'judul_putih' => 'Webinar',
-            'desk' => 'Ketahui sudut pandang dari narasumber yang berkompeten dalam menunjang karir dan pendidikan di kedokteran gigi. Webinar juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.',
-            'button' => 'Lihat Webinar On Bulan Ini!'
-        ]);
-
-        Homepage::create([
-            'judul_hitam' => 'DentsPractice',
-            'judul_putih' => 'COMING SOON!',
-            'desk' => ' ',
-            'button' => ' '
-        ]);
-
-        Homepage::create([
-            'judul_hitam' => 'DENTS.TALK',
-            'judul_putih' => ' ',
-            'desk' => 'Berkontribusi langsung meningkatkan mutu dunia kedokteran gigi Indonesia dalam mendukung visi misi kedokteran gigi Indonesia',
-            'button' => ' '
-        ]);
-
-        Homepage::create([
-            'judul_hitam' => 'DENTS.TALK',
-            'judul_putih' => 'Articles',
-            'desk' => ' ',
-            'button' => ' '
-        ]);
-
         About::create([
             'nama' => 'Internship Program',
             'slug' => 'internship-program'
@@ -255,106 +226,312 @@ class DatabaseSeeder extends Seeder
         ]);
         Aboutjudul::create([
             'about_id' => 1,
-            'judul' => 'Apa Saja Dapartemen YangDapat Kamu Pilih'
+            'judul' => 'Apa Saja Dapartemen Yang Dapat Kamu Pilih'
         ]);
 
         Aboutgambar::create([
-            'judul_id' => 1,
+            'aboutjudul_id' => 1,
             'background' => 1,
             'img' => '/Assets/20220728_193418_0000.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 3,
+            'aboutjudul_id' => 3,
             'background' => 1,
             'img' => '/Assets/20220728_193418_0001.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 3,
+            'aboutjudul_id' => 3,
             'background' => 0,
-            'review_id' => 1,
+            'aboutreview_id' => 1,
             'img' => '/Assets/dummy_1.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 3,
+            'aboutjudul_id' => 3,
             'background' => 0,
-            'review_id' => 2,
+            'aboutreview_id' => 2,
             'img' => '/Assets/dummy_2.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 3,
+            'aboutjudul_id' => 3,
             'background' => 0,
-            'review_id' => 3,
+            'aboutreview_id' => 3,
             'img' => '/Assets/dummy_3.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 4,
+            'aboutjudul_id' => 4,
             'background' => 0,
             'img' => '/Assets/20220728_193418_0000.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_1.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_2.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_3.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_4.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_4.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_3.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_2.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 5,
+            'aboutjudul_id' => 5,
             'background' => 0,
             'img' => '/Assets/dummy_1.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 1,
             'img' => '/Assets/20220728_193418_0002.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 0,
             'img' => '/Assets/dummy_1.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 0,
             'img' => '/Assets/dummy_2.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 0,
             'img' => '/Assets/dummy_3.png'
         ]);
         Aboutgambar::create([
-            'judul_id' => 6,
+            'aboutjudul_id' => 6,
             'background' => 0,
             'img' => '/Assets/dummy_4.png'
+        ]);
+
+        Aboutdesk::create([
+            'aboutjudul_id' => 1,
+            'text' => "Gabung Sekarang!",
+        ]);
+        Aboutdesk::create([
+            'aboutjudul_id' => 2,
+            'text' => "Halo teman-teman mahasiswa kedokteran gigi maupun non kedokteran gigi yang ingin mengembangkan minat dan kreativitas kalian, yuk bergabung bersama DENTS.TALK melalui program internship kami yaitu “DentsArmy”. Disini kamu bisa memilih departemen yang sesuai dengan keminatan kamu loh! Yuk disimak departemen apa saja yang bisa kamu pilih.",
+        ]);
+        Aboutdesk::create([
+            'aboutjudul_id' => 6,
+            'text' => "Lorem ipsum",
+        ]);
+        Aboutdesk::create([
+            'aboutjudul_id' => 6,
+            'text' => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam commodi velit dolore deserunt neque, asperiores culpa, excepturi exercitationem accusamus eveniet dolorum? Praesentium iusto natus quis dolore illum quas laborum.",
+        ]);
+
+        Aboutreview::create([
+            'text' => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.",
+            'nama' => "Lorem ipsum",
+            'role' => "dolor sit"
+        ]);
+        Aboutreview::create([
+            'text' => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.",
+            'nama' => "Dolor sit",
+            'role' => "Lorem ipsum"
+        ]);
+        Aboutreview::create([
+            'text' => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.",
+            'nama' => "Dolor sit",
+            'role' => "Lorem ipsum"
+        ]);
+
+        Web::create([
+            'judul'=>"Home"
+        ]);
+        Web::create([
+            'judul'=>"Program"
+        ]);
+        Web::create([
+            'judul'=>"Article"
+        ]);
+        Web::create([
+            'judul'=>"About"
+        ]);
+
+        Page::create([
+            'judul'=>'DentsLearn HandsOn',
+            'slug'=>'dentslearn-handson',
+            'web_id'=>2
+        ]);
+        Page::create([
+            'judul'=>'DentsLearn Webinar',
+            'slug'=>'dentslearn-webinar',
+            'web_id'=>2
+        ]);
+        Page::create([
+            'judul'=>'DentsPractice',
+            'slug'=>'dentspractice',
+            'web_id'=>2
+        ]);
+
+        Page::create([
+            'judul'=>'Internship Program',
+            'slug'=>'internship-program',
+            'web_id'=>4
+        ]);
+        Page::create([
+            'judul'=>'Company Profile',
+            'slug'=>'company-profile',
+            'web_id'=>4
+        ]);
+
+        Text::create([
+            'text'=>'DentsLearn:',
+            'page_id'=>1
+        ]);
+        Text::create([
+            'text'=>'Hands On',
+            'page_id'=>1
+        ]);
+        Text::create([
+            'text'=>'Dapatkan ilmu-ilmu baru seputar kedokteran gigi dan kembangkan skill kedokteran gigimu di DentsLearn: Hands On! <br>Hands On juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.',
+            'page_id'=>1
+        ]);
+        Text::create([
+            'text'=>'Lihat Hands On Bulan Ini!',
+            'page_id'=>1
+        ]);
+        Text::create([
+            'text'=>'Webinar Bulan Ini',
+            'page_id'=>1
+        ]);
+        Text::create([
+            'text'=>'DentsLearn: HandsOn 17<br>Operculectomy Using Conventional Technic',
+            'page_id'=>1
+        ]);
+        Text::create([
+            'text'=>'DentsLearn: Hands On Sebelumnya',
+            'page_id'=>1
+        ]);
+        Text::create([
+            'text'=>'DentsLearn: HandsOn 13<br>Simple Dental Wire',
+            'page_id'=>1
+        ]);
+
+        Gambar::create([
+            'img'=>'/Assets/20220728_193425_0000.png',
+            'background'=>1,
+            'page_id'=>1
+        ]);
+        Gambar::create([
+            'img'=>'/Assets/program_1.jpg',
+            'background'=>0,
+            'page_id'=>1
+        ]);
+        Gambar::create([
+            'img'=>'/Assets/20220728_193433_0001.png',
+            'background'=>1,
+            'page_id'=>1
+        ]);
+        Gambar::create([
+            'img'=>'/Assets/program_2.png',
+            'background'=>0,
+            'page_id'=>1
+        ]);
+
+        Text::create([
+            'text'=>'DentsLearn:',
+            'page_id'=>2
+        ]);
+        Text::create([
+            'text'=>'Webinar',
+            'page_id'=>2
+        ]);
+        Text::create([
+            'text'=>'Ketahui sudut pandang dari narasumber yang berkompeten dalam menunjang karir dan pendidikan di kedokteran gigi.<br>Webinar juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.',
+            'page_id'=>2
+        ]);
+        Text::create([
+            'text'=>'Webinar Bulan Ini',
+            'page_id'=>2
+        ]);
+        Text::create([
+            'text'=>'Lihat Hands On Bulan Ini!',
+            'page_id'=>2
+        ]);
+        Text::create([
+            'text'=>'DentsLearn: Webinar 17<br>Operculectomy: When We Need That Procedure?',
+            'page_id'=>2
+        ]);
+        Text::create([
+            'text'=>'DentsLearn: Webinar Sebelumnya',
+            'page_id'=>2
+        ]);
+        Text::create([
+            'text'=>'DentsLearn: Webinar 13<br>Penatalaksanaan Trauma Dentoalveolar pada prakter sehari hari',
+            'page_id'=>2
+        ]);
+
+        Gambar::create([
+            'img'=>'/Assets/20220728_194108_0000.png',
+            'background'=>1,
+            'page_id'=>2
+        ]);
+        Gambar::create([
+            'img'=>'/Assets/program_1.jpg',
+            'background'=>0,
+            'page_id'=>2
+        ]);
+        Gambar::create([
+            'img'=>'/Assets/20220728_193433_0001.png',
+            'background'=>1,
+            'page_id'=>2
+        ]);
+        Gambar::create([
+            'img'=>'/Assets/program_2.png',
+            'background'=>0,
+            'page_id'=>2
+        ]);
+
+        Text::create([
+            'text'=>'DentsPractice',
+            'page_id'=>3
+        ]);
+        Text::create([
+            'text'=>'COMING SOON!',
+            'page_id'=>3
+        ]);
+
+        Gambar::create([
+            'img'=>'/Assets/20220728_193407_0000.png',
+            'background'=>1,
+            'page_id'=>3
+        ]);
+
+        User::create([
+            'nama'=>'Admin',
+            'umur'=>'0',
+            'NPA'=>'-',
+            'nohp'=>'-',
+            'email'=>'Admin@gmail.com',
+            'role'=>'Admin',
+            'password'=>bcrypt('12345')
         ]);
     }
 }

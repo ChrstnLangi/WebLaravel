@@ -1,38 +1,30 @@
 @inject('about', 'App\Models\About')
+@inject('web', 'App\Models\Web')
 
-<div data-collapse="medium" data-animation="default" data-duration="200" data-easing="ease-in-out" data-easing2="ease-in-out" data-doc-height="1" role="banner" class="nav_component new-bacground new w-nav" style="padding-bottom: 5%">
+<div data-collapse="medium" data-animation="default" data-duration="200" data-easing="ease-in-out" data-easing2="ease-in-out" data-doc-height="1" role="banner" class="nav_component new-bacground new w-nav">
     <div class="page-padding">
       <div class="nav_container"><a href="/" aria-current="page" class="nav_logo-link w-nav-brand w--current"><img src="/Assets/13_20220719_015826_0012.png" loading="lazy" alt="" class="nav_logo new" /></a>
         <nav role="navigation" class="nav_menu w-nav-menu">
+          @foreach ( $web->content() as $web )
+          @if($loop->iteration !== 1)
           <div data-hover="true" data-delay="0" class="nav_dropdown w-dropdown">
             <div class="nav_dropdown-toggle w-dropdown-toggle">
               <div class="nav_icon w-icon-dropdown-toggle"></div>
-              <div class="text-block nav-text">Programs</div>
+              @if ($web->judul == "Article")
+                      <a href="/{{ $web->judul }}" class="text-block" style="color: black; text-decoration : none;">{{ $web->judul }}</a>
+                      @else
+                      <div class="text-block">{{ $web->judul }}</div>
+                @endif
             </div>
             <nav class="nav_dropdown-list w-dropdown-list">
-              <div class="nav_link nav-dropdown-catagory">Full Programs (6-months)</div>
-              <a href="/digital-marketing" id="apply10" class="nav_link is-dropdown-link is-first-dropdown-link w-dropdown-link">Digital Marketing</a><a href="/data-analytics" id="apply11" class="nav_link is-dropdown-link w-dropdown-link">Data Analytics</a><a href="/product-management" id="apply12" class="nav_link is-dropdown-link is-last-dropdown-link w-dropdown-link">Product Management</a>
-              <div class="nav_link nav-dropdown-catagory">Intro Programs (2-Weeks)</div><a href="https://revou.co/mini-course-digital-marketing" id="apply7" class="nav_link is-dropdown-link is-first-dropdown-link w-dropdown-link">Digital Marketing</a><a href="https://revou.co/mini-course-data-analytics" id="apply8" class="nav_link is-dropdown-link w-dropdown-link">Data Analytics</a><a href="https://revou.co/mini-course-product-management" id="apply9" class="nav_link is-dropdown-link is-last-dropdown-link w-dropdown-link">Product Management</a><a href="https://apply.revou.co/mini-course-sales-registration-closed/?source=webmc" class="nav_link is-dropdown-link mcts w-dropdown-link">Tech Sales</a>
-            </nav>
-          </div>
-          <div data-hover="true" data-delay="0" class="nav_dropdown w-dropdown">
-            <div class="nav_dropdown-toggle w-dropdown-toggle">
-              <div class="nav_icon w-icon-dropdown-toggle"></div>
-              <div class="text-block">Articles</div>
-            </div>
-            <nav class="nav_dropdown-list w-dropdown-list"><a href="/hiring" class="nav_link is-dropdown-link is-first-dropdown-link w-dropdown-link">Hire RevoU Graduates</a><a href="/labs-partner" class="nav_link is-dropdown-link is-first-dropdown-link w-dropdown-link">business solutions</a></nav>
-          </div>
-          <div data-hover="true" data-delay="0" class="nav_dropdown w-dropdown">
-            <div class="nav_dropdown-toggle w-dropdown-toggle">
-              <div class="nav_icon w-icon-dropdown-toggle"></div>
-              <div class="text-block">About</div>
-            </div>
-            <nav class="nav_dropdown-list w-dropdown-list">
-                @foreach ($about->content() as $about)
-                <a href="/about/{{ $about->slug }}" class="nav_link is-dropdown-link w-dropdown-link">{{ $about->slug }}</a>
+                @foreach ($web->Page as $page)
+                <a href="/{{ $web->judul }}/{{ $page->slug }}" class="nav_link is-dropdown-link w-dropdown-link">{{ $page->judul }}</a>
                 @endforeach
             </nav>
           </div>
+          @endif
+          @endforeach
+
 
           @auth
           <div data-hover="true" data-delay="0" class="nav_dropdown w-dropdown">
@@ -49,7 +41,7 @@
             </nav>
           </div>
           @else
-          <a href="/login" class="text-block nav-text nav_icon nav_link nav_link">Login<i class="bi bi-box-arrow-in-right"></i></a>
+          <a href="/login" class="text-block nav-text nav_icon nav_link nav_link" style="text-decoration : none;">Login<i class="bi bi-box-arrow-in-right"></i></a>
           @endauth
 
 

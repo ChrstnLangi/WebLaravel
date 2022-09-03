@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use App\Models\About;
+use App\Models\Aboutdesk;
+use App\Models\Aboutgambar;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 

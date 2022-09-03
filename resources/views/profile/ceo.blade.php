@@ -1,4 +1,4 @@
-<div style="background-image: url('/Assets/20220728_193418_0002.png'); background-size: cover;background-repeat: no-repeat; padding-top: 5%;">
+<div style="background-image: url('/Assets/20220820_131708_0000.png'); background-size: cover;background-repeat: no-repeat; padding-top: 5%;">
     <div class="text-center">
         <h2 style="font-size: 150%">Kenalan Dengan Pendiri DENTS.TALK</h2>
         <h2 style="font-size: 240%; margin-bottom: 5%;">David & Grace</h2>

@@ -18,7 +18,7 @@ class CreateAboutgambarsTable extends Migration
             $table->foreignId('aboutjudul_id');
             $table->boolean('background');
             $table->string('img');
-            $table->foreignId('review_id')->nullable();;
+            $table->foreignId('aboutreview_id')->nullable();;
             $table->timestamps();
         });
     }

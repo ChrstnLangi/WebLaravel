@@ -20,4 +20,9 @@ class About extends Model
     {
         return $this->hasMany(Aboutjudul::class);
     }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

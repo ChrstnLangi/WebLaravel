@@ -1,9 +1,9 @@
-@extends('layouts.main')
+@extends('about.main')
 
 @section('contain')
 <header>
-<div syle="background-image: url();">
-<div class="section-homepage-header">
+<div style="background-image: url('{{ $judul[0]->Aboutgambar[0]->load('Aboutjudul')->img }}'); background-size: cover; background-position:center;">
+<div class="section-header" style = "padding-top: 8rem; padding-bottom: 6.5rem">
     <div class="page-padding">
       <div class="container-large">
         <div class="padding-vertical padding-large is-custom-padding">
@@ -11,14 +11,14 @@
             <div id="w-node-c3733106-a61e-156e-654f-c21c9b4597c1-2897c137" class="homepage-header_content-wrapper">
               <div class="homepage-header_content">
                 <div data-w-id="5fb4b4db-d69c-5d88-8c1a-2cd78f94baf3" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="homepage-header_heading-wrapper">
-                  <h1 class="homepage_header_heading"><span class="heading-highlight">{{ $judul[0]->judul }}</span></h1>
+                  <h1 class="homepage_header_heading"><span style="color:white">{{ $judul[0]->judul }}</span></h1>
                 </div>
                 <div data-w-id="c3733106-a61e-156e-654f-c21c9b4597c5" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="homepage-header_text-wrapper">
                   <div class="homepage_header-text"></div>
                 </div>
                 <div data-w-id="c3733106-a61e-156e-654f-c21c9b4597c8" class="margin-top margin-medium is-custom-margin">
                     <a href="#our-programs" data-w-id="c3733106-a61e-156e-654f-c21c9b4597c9" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button is-hero-button w-button">
-                        {{ $judul }}
+                        {{ $judul[0]->Aboutdesk[0]->load('Aboutjudul')->text }}
                     </a></div>
               </div>
             </div>
@@ -28,5 +28,260 @@
     </div>
 </div>
 </div>
+
+<div>
+<div class="section-header">
+    <div class="page-padding" style = "
+    width: 100%;
+    max-width: 77rem;
+    margin-right: auto;
+    margin-left: auto;">
+        <div class="padding-vertical padding-xhuge">
+            <div class="margin-bottom margin-xlarge">
+              <div class="text-align-center">
+                <h1 class="homepage_header_heading text-center"><span style="color:black">{{ $judul[1]->judul }}</span></h1>
+                <div class="homepage_header-text text-center">
+                    {{ $judul[1]->Aboutdesk[0]->load('Aboutjudul')->text }}
+                  </div>
+              </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+<div>
+    <div class="section-review" style="background-image: url('{{ $judul[2]->Aboutgambar->load('Aboutjudul')->where('background',1)[0]->img }}'); background-size: cover; background-position:center;">
+        <div class="page-padding" style = "
+        width: 100%;
+        max-width: 77rem;
+        margin-right: auto;
+        margin-left: auto;">
+      <div class="container-large">
+        <div class="padding-vertical padding-xhuge">
+          <div class="margin-bottom margin-medium">
+            <div class="text-align-center">
+              <h2 data-w-id="9ffab59e-7706-d2be-ebf0-c06419292ec7" style="opacity:0" class="max-width-mobile">{{ $judul[2]->judul }}
+                </h2>
+            </div>
+          </div>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @for ($i = 1; $i <= $judul[2]->Aboutgambar->load('Aboutjudul')->where('background',0)->count(); $i++ )
+                    <div class="carousel-item @if ($i == 1)
+                    active
+                    @endif">
+                    <div class="container mx-auto" style="margin-left: 15%;">
+                        <div class="row mx-auto"style="background-color: white;">
+                            <div class="col-8">
+                                <div class="paragraph-2">{{ $judul[2]->Aboutgambar->load('Aboutjudul', 'Aboutreview')->where('aboutreview_id',$i)[$i]->Aboutreview->text }}</div>
+                            </div>
+                            <div class="col">
+                                <div class=""><img src="{{ $judul[2]->Aboutgambar->load('Aboutjudul', 'Aboutreview')->where('aboutreview_id',$i)[$i]->img }}" class="testimonials1_client-image" alt="..."    style = "margin-left: 35%"></div>
+                                <div class="testimonial1_name text-center">{{ $judul[2]->Aboutgambar->load('Aboutjudul', 'Aboutreview')->where('aboutreview_id',$i)[$i]->Aboutreview->nama }}</div>
+                                <div class="paragraph-2 text-center">{{ $judul[2]->Aboutgambar->load('Aboutjudul', 'Aboutreview')->where('aboutreview_id',$i)[$i]->Aboutreview->role }}</div>
+                            </div>
+                          </div>
+                </div>
+                </div>
+                @endfor
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="section-review" style="">
+        <div class="page-padding" style = "
+        width: 100%;
+        max-width: 77rem;
+        margin-right: auto;
+        margin-left: auto;">
+      <div class="container-large">
+        <div class="padding-vertical padding-xhuge">
+          <div class="margin-bottom margin-medium">
+            <div class="text-align-center">
+              <h2 data-w-id="9ffab59e-7706-d2be-ebf0-c06419292ec7" style="opacity:0" class="max-width-mobile">{{ $judul[3]->judul }}
+                </h2>
+            </div>
+          </div>
+          <img src="{{ $judul[3]->Aboutgambar[0]->load('Aboutjudul', 'Aboutreview')->img }}" alt="...">
+        </div>
+      </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="section-review" style="">
+    <div class="page-padding" style = "
+        width: 100%;
+        max-width: 77rem;
+        margin-right: auto;
+        margin-left: auto;">
+      <div class="container-large">
+        <div class="padding-vertical padding-xhuge">
+          <div class="margin-bottom margin-medium">
+            <div class="text-align-center">
+              <h2 data-w-id="9ffab59e-7706-d2be-ebf0-c06419292ec7" style="opacity:0" class="max-width-mobile">{{ $judul[4]->judul }}
+                </h2>
+            </div>
+          </div>
+          <div data-delay="6000" data-animation="slide" class="slider desktop w-slider" data-autoplay="true" data-easing="ease-out" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="4" data-duration="500" data-infinite="true">
+
+            @for ($i=1; $i<=$judul[4]->Aboutgambar->load('Aboutjudul')->where('background',0)->count()/4;$i++)
+
+            @if ($i==1)<div class="gallery_mask w-slider-mask" >@endif
+                    <div class="gallery_slide w-slide">
+                        <div class="w-dyn-list">
+                            <div role="list" class="slider-wrapper w-dyn-items">
+
+                            @for ($j=0+($i*4); $j<4+($i*4);$j++)
+                            <div role="listitem" class="w-dyn-item">
+                                <div class="transformed-testimonial-wrapper hidden-mobile">
+                                <div class="testimonials1_content">
+                                    <img src="{{ $judul[3]->Aboutgambar[0]->load('Aboutjudul', 'Aboutreview')->img }}" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            @endfor
+
+                        </div>
+                    </div>
+             @if ($i==1) </div> @endif
+            @endfor
+          </div>
+        </div>
+
+        <div class="program-testimonial_arrow is-slider w-slider-arrow-left"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c15dec60b98_ph_caret-left-bold.svg" loading="lazy" alt="" class="image-4" /></div>
+            <div class="program-testimonial_arrow right is-slider-right w-slider-arrow-right"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c599cc60b97_ph_caret-right-bold.svg" loading="lazy" alt="" class="image-5" /></div>
+            <div class="testimonials2_slider-nav-2 w-slider-nav w-slider-nav-invert w-round"></div>
+            <div class="testimonials2_slider-nav-styles w-embed">
+              <style>
+                .w-slider-dot {
+                  background: #24292e;
+                  opacity: 25%;
+                  width: 0.5rem;
+                  height: 0.5rem;
+                }
+
+                .w-slider-dot.w-active {
+                  opacity: 100%;
+                }
+              </style>
+            </div>
+      </div>
+
+
+      <div data-delay="6000" data-animation="slide" class="slider mobile w-slider" data-autoplay="true" data-easing="ease-out" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="4" data-duration="500" data-infinite="true">
+        <div class="gallery_mask w-slider-mask">
+
+            @for ($i=0; $i<$judul[4]->Aboutgambar->load('Aboutjudul')->where('background',0)->count(); $i++)
+            <div class="gallery_slide w-slide">
+                <div class="w-dyn-list">
+                  <div role="list" class="slider-wrapper w-dyn-items">
+                    <div role="listitem" class="w-dyn-item">
+                      <div class="transformed-testimonial-wrapper hidden-mobile">
+                        <div class="testimonials1_content">
+                            <img src="{{ $judul[3]->Aboutgambar[0]->load('Aboutjudul', 'Aboutreview')->img }}" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    {{ $i += 1 }}
+                    <div role="listitem" class="w-dyn-item">
+                      <div class="transformed-testimonial-wrapper hidden-mobile">
+                        <div class="testimonials1_content">
+                            <img src="{{ $judul[3]->Aboutgambar[0]->load('Aboutjudul', 'Aboutreview')->img }}" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            @endfor
+
+        </div>
+        <div class="program-testimonial_arrow is-slider mobile w-slider-arrow-left"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c15dec60b98_ph_caret-left-bold.svg" loading="lazy" alt="" class="image-4" /></div>
+        <div class="program-testimonial_arrow right is-slider-right mobile w-slider-arrow-right"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c599cc60b97_ph_caret-right-bold.svg" loading="lazy" alt="" class="image-5" /></div>
+        <div class="testimonials2_slider-nav-2 w-slider-nav w-slider-nav-invert w-round"></div>
+        <div class="testimonials2_slider-nav-styles w-embed">
+          <style>
+            .w-slider-dot {
+              background: #24292e;
+              opacity: 25%;
+              width: 0.5rem;
+              height: 0.5rem;
+            }
+
+            .w-slider-dot.w-active {
+              opacity: 100%;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div style="background-image: url('{{ $judul[5]->Aboutgambar[0]->load('Aboutjudul')->img }}'); background-size: cover; background-position:center;">
+  <div class="section-header">
+      <div class="page-padding" style = "
+      margin-right: auto;
+      margin-left: auto;">
+          <div class="padding-vertical padding-xhuge">
+              <div class="margin-bottom margin-xlarge">
+                <div class="text-align-center">
+                  <h1 class="homepage_header_heading text-center" style="
+                  max-width: 64%;
+                  margin: auto;
+                  line-height: 110%;
+                  padding-bottom: 2%;"><span style="color:white">{{ $judul[5]->judul }}</span></h1>
+                </div>
+                <div style="margin: auto;background-color: #ffde3e;max-width: 85%;">
+                <div style="
+                background-color: #fff;
+                border-radius: 20px;
+                padding-left: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                ">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-1">
+                            <div class="testimonials1_client-image-wrapper"><img src={{ $judul[5]->Aboutgambar[0]->load('Aboutjudul')->img }} loading="lazy" alt="" sizes="(max-width: 991px) 100vw, 72px" class="testimonials1_client-image" /></div>
+                        </div>
+                        <div class = "col">
+                            <div class = "testimonial1_name">
+                            {{ $judul[5]->Aboutdesk[0]->load('Aboutjudul')->text }}
+                            </div>
+                            <div class = "paragraph-2">{{ $judul[5]->Aboutdesk[1]->load('Aboutjudul')->text }}</div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+
+
   </header>
 @endsection

@@ -13,9 +13,14 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="input-group" style=" margin-top: 12%;">
-                        <input type="search" style="padding: 1% 2%;" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                        <button type="button" class="btn btn-outline-primary">search</button>
+                    <div class="card mb-2">
+                        <div class="card-body p-2">
+                          <div class="input-group input-group-lg">
+                            <input type="text" class="form-control form-control-lg rounded" placeholder="Type Keywords"
+                              aria-label="Type Keywords" aria-describedby="basic-addon2" />
+                            <span class="input-group-text border-0" id="basic-addon2"><i class="fas fa-search"></i></span>
+                          </div>
+                        </div>
                       </div>
                 </div>
             </div>

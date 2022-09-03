@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\About;
+use App\Models\Page;
 use App\Models\Article;
 use App\Models\Program;
 use App\Http\Controllers\Postcontrol;
@@ -8,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Logincontrol;
 use App\Http\Controllers\Registercontrol;
 use App\Http\Controllers\Dashboardhomesection_1;
+use App\Http\Controllers\internship;
+use App\Models\Web;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,17 +29,45 @@ Route::get('/dashboard', function(){
     return view('dashboard.index', [
         'title' => 'Dashboard',
         "programs" => Program::content(),
+        "about" => About::content(),
         "articles" => Article::content()
     ]);
 })->middleware('auth');
 
-Route::get('/about/{About:slug}', function(About $About){
+Route::get('/About/company-profile', function(About $About){
+    return view('about.company', [
+        'title' => "Company Profile"
+    ]);
+});
+
+Route::get('/Article', function(){
+    return view('article.index', [
+        'title' => "Article"
+    ]);
+});
+
+
+Route::get('/About/{About:slug}', function(About $About){
     return view('about.internship', [
         'title' => $About -> nama,
-        'judul' => $About -> Aboutjudul,
+        'judul' => $About -> Aboutjudul->load('About'),
         'slug' => $About -> slug
     ]);
 });
+
+
+
+Route::get('/Program/{page:slug}', function(Page $page){
+    return view('program.index', [
+        'title' => $page -> judul,
+        'page' => $page,
+        'slug' => $page -> slug
+    ]);
+})->scopeBindings();
+
+
+
+Route::resource('/dashboard/about', internship::class)->middleware('auth');
 
 Route::get('/login', [Logincontrol::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [Logincontrol::class, 'authenticate']);
@@ -46,9 +77,3 @@ Route::get('/register', [Registercontrol::class, 'index'])->middleware('guest');
 Route::post('/register', [Registercontrol::class, 'store']);
 
 Route::resource('/dashboard/home/section_1', Dashboardhomesection_1::class)->middleware('auth');
-
-Route::get('/dentslearn', [Postcontrol::class, 'dentslearn']);;
-Route::get('/webinar', [Postcontrol::class, 'webinar']);;
-Route::get('/dentspractice', [Postcontrol::class, 'dentsprac']);;
-Route::get('/company-profile', [Postcontrol::class, 'profile']);;
-Route::get('/articles', [Postcontrol::class, 'article']);;

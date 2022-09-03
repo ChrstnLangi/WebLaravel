@@ -16,7 +16,7 @@ class CreateAboutjudulsTable extends Migration
         Schema::create('aboutjuduls', function (Blueprint $table) {
             $table->id();
             $table->foreignId('about_id');
-            $table->string('judul');
+            $table->longText('judul');
             $table->timestamps();
         });
     }

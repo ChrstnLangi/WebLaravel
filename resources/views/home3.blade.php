@@ -10,12 +10,12 @@
                 <div class="why-join_component">
                   <div id="w-node-_97624f1c-fdab-65d4-f975-6c53d31797a0-2897c137" data-w-id="97624f1c-fdab-65d4-f975-6c53d31797a0" class="why-join_upper-row-card">
                     <div class="why-join_icon-wrapper"><img src={{ $joins[0]['img'] }} loading="lazy" alt="" class="flexible-icon" /></div>
-                    <h3 class="why-join_card-heading text-align-center"><strong>{{ $joins[0]['judul'] }}</strong><br /></h3>
+                    <h3 class="why-join_card-heading text-align-center">{{ $joins[0]['judul'] }}<br /></h3>
                     <p class="text-align-center">{{ $joins[0]['desk'] }}<br /></p>
                   </div>
                   <div id="w-node-_4d38a301-1b74-e09e-6afb-0ac0407c604c-2897c137" data-w-id="4d38a301-1b74-e09e-6afb-0ac0407c604c" style="opacity:0" class="why-join_upper-row-card">
                     <div class="why-join_icon-wrapper"><img src={{ $joins[1]['img'] }} loading="lazy" alt="" class="learn-icon" /></div>
-                    <h3 class="why-join_card-heading is-custom-width text-align-center"><strong class="bold-text">{{ $joins[1]['judul'] }}</strong><br /></h3>
+                    <h3 class="why-join_card-heading is-custom-width text-align-center">{{ $joins[1]['judul'] }}<br /></h3>
                     <p class="text-align-center">{{ $joins[1]['desk'] }}<br /></p>
                   </div>
                   <div id="w-node-_296d36c0-f7fd-7171-6330-e62f05b5da85-2897c137" data-w-id="296d36c0-f7fd-7171-6330-e62f05b5da85" class="why-join_upper-row-card">
@@ -30,7 +30,7 @@
                   </div>
                   <div id="w-node-d35938d4-4ac5-2784-e41f-bd60f810eb80-2897c137" data-w-id="d35938d4-4ac5-2784-e41f-bd60f810eb80" class="why-join_lower-row-card is-custom-padding">
                     <div class="why-join_icon-wrapper"><img src={{ $joins[4]['img'] }} loading="lazy" alt="" class="image" /></div>
-                    <h3 class="why-join_card-heading text-align-center bottom-boxes"><strong>{{ $joins[4]['judul'] }}</strong><br /></h3>
+                    <h3 class="why-join_card-heading text-align-center bottom-boxes">{{ $joins[4]['judul'] }}<br /></h3>
                     <p class="text-align-center has-custom-width">{{ $joins[4]['desk'] }} <br /></p>
                   </div>
                 </div>

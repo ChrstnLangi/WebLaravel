@@ -8,7 +8,7 @@
           <div class="footer_component">
             <div class="margin-bottom margin-large new">
               <div class="footer2_content">
-                <div class="footer2_content-left"><a href="/" aria-current="page" class="footer_logo-link-block w-inline-block w--current"><img src="/Assets/dents.talk-rounf.png" loading="lazy" alt="" class="foote_logo" /></a></div>
+                <div class="footer2_content-left"><a href="/" aria-current="page" class="footer_logo-link-block w-inline-block w--current"><img src="/Assets/png_20220719_050121_0000.png" loading="lazy" alt="" class="foote_logo" /></a></div>
                 <div class="footer2_content-right _5-column">
                     @foreach ($web->content()->skip(1) as $web)
                     @if ($web->judul=="Article")

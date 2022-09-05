@@ -2,23 +2,24 @@
 
 @section('contain')
 <header>
-<div style="background-image: url('{{ $judul[0]->Aboutgambar[0]->load('Aboutjudul')->img }}'); background-size: cover; background-position:center;">
+<div style="background-image: url('{{ $judul[0]->Aboutgambar[0]->load('Aboutjudul')->img }}'); background-size: cover; background-position:center; padding-bottom: 150px;">
 <div class="section-header" style = "padding-top: 8rem; padding-bottom: 6.5rem">
     <div class="page-padding">
       <div class="container-large">
         <div class="padding-vertical padding-large is-custom-padding">
-          <div class="w-layout-grid homepage-header_component">
-            <div id="w-node-c3733106-a61e-156e-654f-c21c9b4597c1-2897c137" class="homepage-header_content-wrapper">
-              <div class="homepage-header_content">
-                <div data-w-id="5fb4b4db-d69c-5d88-8c1a-2cd78f94baf3" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="homepage-header_heading-wrapper">
-                  <h1 class="homepage_header_heading"><span style="color:white">{{ $judul[0]->judul }}</span></h1>
+          <div class="w-layout-grid homepage-header_component" style="grid-template-columns: 6fr 1fr;
+          ">
+            <div id="w-node-c3733106-a61e-156e-654f-c21c9b4597c1-2897c137" class="homepage-header_content-wrapper" style="max-width: 100%;">
+              <div class="homepage-header_content" style="max-width: 100%;">
+                <div data-w-id="5fb4b4db-d69c-5d88-8c1a-2cd78f94baf3" style="max-width: 100%; opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="homepage-header_heading-wrapper">
+                  <h1 class="homepage_header_heading" style="max-width: 100%;"><span style="color:white">{!! $judul[0]->judul !!}</span></h1>
                 </div>
                 <div data-w-id="c3733106-a61e-156e-654f-c21c9b4597c5" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="homepage-header_text-wrapper">
                   <div class="homepage_header-text"></div>
                 </div>
                 <div data-w-id="c3733106-a61e-156e-654f-c21c9b4597c8" class="margin-top margin-medium is-custom-margin">
-                    <a href="#our-programs" data-w-id="c3733106-a61e-156e-654f-c21c9b4597c9" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button is-hero-button w-button">
-                        {{ $judul[0]->Aboutdesk[0]->load('Aboutjudul')->text }}
+                    <a href="#our-programs"  data-w-id="c3733106-a61e-156e-654f-c21c9b4597c9" style="background-color:#ffb703; opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button is-hero-button w-button">
+                        {!! $judul[0]->Aboutdesk[0]->load('Aboutjudul')->text !!}
                     </a></div>
               </div>
             </div>
@@ -39,7 +40,7 @@
         <div class="padding-vertical padding-xhuge">
             <div class="margin-bottom margin-xlarge">
               <div class="text-align-center">
-                <h1 class="homepage_header_heading text-center"><span style="color:black">{{ $judul[1]->judul }}</span></h1>
+                <h2 class="homepage_header_heading text-center"><span style="color:black">{{ $judul[1]->judul }}</span></h2>
                 <div class="homepage_header-text text-center">
                     {{ $judul[1]->Aboutdesk[0]->load('Aboutjudul')->text }}
                   </div>
@@ -73,11 +74,23 @@
                     active
                     @endif">
                     <div class="container mx-auto" style="margin-left: 15%;">
-                        <div class="row mx-auto"style="background-color: white;">
-                            <div class="col-8">
-                                <div class="paragraph-2">{{ $judul[2]->Aboutgambar->load('Aboutjudul', 'Aboutreview')->where('aboutreview_id',$i)[$i]->Aboutreview->text }}</div>
+                        <div class="testimonial1_quote-wrapper-inside" style="right: auto; top: -4%; left:2%;"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c77a5c60b96_icon%201.svg" loading="lazy" alt="" class="testimonial1_quote-icon" /></div>
+                        <div class="testimonial1_quote-wrapper-inside" style="right: 35%; top: auto; left:auto; bottom:0%; transform:scaleX(-1)"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c77a5c60b96_icon%201.svg" loading="lazy" alt="" class="testimonial1_quote-icon" /></div>
+                        <div class="row mx-auto"style="background-color: white; padding: 50px 0;">
+                            <div class="col-7">
+                                <div style="
+                                    display: table-cell;
+                                    padding: 10px;
+                                    vertical-align: middle;
+                                  ">
+
+                                  <div style="margin:auto;" class="paragraph-2">{{ $judul[2]->Aboutgambar->load('Aboutjudul', 'Aboutreview')->where('aboutreview_id',$i)[$i]->Aboutreview->text }}</div>
+                                </div>
                             </div>
-                            <div class="col">
+                            <div class="col-1">
+                                <div style="border-right: 3px solid #eedc7a; height:80%; margin-top:10px;"></div>
+                            </div>
+                            <div class="col-2">
                                 <div class=""><img src="{{ $judul[2]->Aboutgambar->load('Aboutjudul', 'Aboutreview')->where('aboutreview_id',$i)[$i]->img }}" class="testimonials1_client-image" alt="..."    style = "margin-left: 35%"></div>
                                 <div class="testimonial1_name text-center">{{ $judul[2]->Aboutgambar->load('Aboutjudul', 'Aboutreview')->where('aboutreview_id',$i)[$i]->Aboutreview->nama }}</div>
                                 <div class="paragraph-2 text-center">{{ $judul[2]->Aboutgambar->load('Aboutjudul', 'Aboutreview')->where('aboutreview_id',$i)[$i]->Aboutreview->role }}</div>
@@ -250,6 +263,7 @@
                   line-height: 110%;
                   padding-bottom: 2%;"><span style="color:white">{{ $judul[5]->judul }}</span></h1>
                 </div>
+
                 <div style="margin: auto;background-color: #ffde3e;max-width: 85%;">
                 <div style="
                 background-color: #fff;
@@ -268,10 +282,7 @@
                             {{ $judul[5]->Aboutdesk[0]->load('Aboutjudul')->text }}
                             </div>
                             <div class = "paragraph-2">{{ $judul[5]->Aboutdesk[1]->load('Aboutjudul')->text }}</div>
-                        </div>
                     </div>
-                </div>
-
                 </div>
             </div>
 
@@ -281,7 +292,16 @@
   </div>
   </div>
 
-
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>
 
   </header>
 @endsection

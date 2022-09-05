@@ -15,12 +15,15 @@
               <div class="row">
                 @foreach ( $programs as $program)
                 <div id="w-node-a42de7b5-0d35-d0fa-e394-2cc3ed1bc063-2897c137" class="our-programs_item col-sm" style="margin-right: 10px; margin-top: 10px">
-                    <div class="our-programs_image-wrapper mx-auto"><img src={{ $program["img"] }} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 33vw, (max-width: 1439px) 29vw, 370px" alt="" class="our-programs_image" /></div>
+                    <div class="our-programs_image-wrapper mx-auto" style="
+                    margin-bottom: 25px;
+                    margin-top: -55px;">
+                    <img class="img-fluid" style="height: 365px; width: auto;" src="{{ $program["img"] }}" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 33vw, (max-width: 1439px) 29vw, 370px" alt="" class="our-programs_image" /></div>
                     <div class="our-programs-wrapper">
-                      <div class="our-programs_content">
+                      <div class="our-programs_content" style="width: 100%;">
                         <h3 class="our-programs_heading mx-auto" style="max-width: 80%; padding-left:0;">{{ $program["judul"] }}</h3>
                         <div class="margin-vertical margin-small">
-                          <div class="paragraph homepage">{{ $program["desk"] }}</div>
+                          <div class="paragraph homepage">{!! $program["desk"] !!}</div>
                         </div>
                       </div>
                       <div class="programs-button-wrapper"><a id="apply" href="/{{ $program["link"] }}" class="button_program is-our-programs w-button">Telusuri</a>

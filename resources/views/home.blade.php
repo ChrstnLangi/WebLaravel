@@ -24,7 +24,6 @@
       </div>
     </div>
   </header>
-@include('home2')
 @include('home3')
 @include('home4')
 @include('home6')

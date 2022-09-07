@@ -2,7 +2,7 @@
 
 @section('contain')
 <header>
-    <div style="background-image: url('/Assets/20220728_193418_0001.png'); background-size: cover; background-position:center;background-repeat: no-repeat">
+    <div style="background-image: url('/Assets/20220820_131708_0000.png'); background-size: cover; background-position:center;background-repeat: no-repeat">
       <div class="section-header">
         <div class="page-padding">
           <div class="container-large">
@@ -82,7 +82,7 @@
         <div class = "container">
             <div class = "row" style="margin-left: -16%;">
                 <div class = "col-6">
-                    <img class="img-fluid" src="/Assets/Copy of vector-2.png" alt="person">
+                    <img class="img-fluid" src="/Assets/3_20220826_013125_0000.png" alt="person">
                 </div>
                 <div class = "col" style="margin-left: 5%;">
                     <div class = "homepage_header-text" style="max-width: 125%; padding-bottom: 5%; margin-right: -20%; margin-left: -21%;line-height: 111%; font-size: 135%; font-weight:500;">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     <div class = "col-6">
-                        <img class="img-fluid" src="/Assets/Copy of vector-7.png" alt="person">
+                        <img class="img-fluid" src="/Assets/4_20220826_013125_0001.png" alt="person">
                     </div>
                 </div>
             </div>

@@ -29,7 +29,7 @@
 
     <section id = "Primary">
     <div style="background-image: url('/Assets/20220826_010711_0001.png'); background-size: cover; background-position:center;">
-        <div class="section-header" style="margin-bottom: -20%;">
+        <div class="section-header" style="margin-bottom: 0%;">
             <div class="page-padding" style = "
             width: 100%;
             max-width: 77rem;
@@ -119,7 +119,7 @@
 
 <section id = "Creative-Content">
     <div style="background-image: url('/Assets/20220826_010711_0002.png'); background-size: cover; background-position:center;">
-        <div class="section-header" style="margin-bottom: -20%;">
+        <div class="section-header" style="margin-bottom: 0%;">
             <div class="page-padding" style = "
             width: 100%;
             max-width: 77rem;
@@ -176,7 +176,7 @@
 
 <section id ="Creative-Design">
     <div style="background-image: url('/Assets/20220826_010711_0003.png'); background-size: cover; background-position:center;">
-        <div class="section-header" style="margin-bottom: -20%;">
+        <div class="section-header" style="margin-bottom: 0%;">
             <div class="page-padding" style = "
             width: 100%;
             max-width: 77rem;
@@ -233,7 +233,7 @@
 
 <section id = "Public-Relation">
     <div style="background-image: url('/Assets/20220826_010711_0004.png'); background-size: cover; background-position:center;">
-        <div class="section-header" style="margin-bottom: -20%;">
+        <div class="section-header" style="margin-bottom: 0%;">
             <div class="page-padding" style = "
             width: 100%;
             max-width: 77rem;

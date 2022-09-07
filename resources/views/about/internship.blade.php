@@ -12,13 +12,13 @@
             <div id="w-node-c3733106-a61e-156e-654f-c21c9b4597c1-2897c137" class="homepage-header_content-wrapper" style="max-width: 100%;">
               <div class="homepage-header_content" style="max-width: 100%;">
                 <div data-w-id="5fb4b4db-d69c-5d88-8c1a-2cd78f94baf3" style="max-width: 100%; opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="homepage-header_heading-wrapper">
-                  <h1 class="homepage_header_heading" style="max-width: 100%;"><span style="color:white">{!! $judul[0]->judul !!}</span></h1>
+                  <h1 class="homepage_header_heading" style="font-size: 55px; max-width: 100%;"><span style="color:white; font-family: 'MontserratSemiBold';" >{!! $judul[0]->judul !!}</span></h1>
                 </div>
                 <div data-w-id="c3733106-a61e-156e-654f-c21c9b4597c5" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="homepage-header_text-wrapper">
                   <div class="homepage_header-text"></div>
                 </div>
                 <div data-w-id="c3733106-a61e-156e-654f-c21c9b4597c8" class="margin-top margin-medium is-custom-margin">
-                    <a href="#our-programs"  data-w-id="c3733106-a61e-156e-654f-c21c9b4597c9" style="background-color:#ffb703; opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button is-hero-button w-button">
+                    <a href="#our-programs"  data-w-id="c3733106-a61e-156e-654f-c21c9b4597c9" style="margin-left:0px; padding: 1rem 5rem;border-radius: 22px;background-color:#ffb703; opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button is-hero-button w-button">
                         {!! $judul[0]->Aboutdesk[0]->load('Aboutjudul')->text !!}
                     </a></div>
               </div>
@@ -31,7 +31,7 @@
 </div>
 
 <div>
-<div class="section-header">
+<div class="section-header" style="margin-bottom: -10%;">
     <div class="page-padding" style = "
     width: 100%;
     max-width: 77rem;
@@ -39,7 +39,7 @@
     margin-left: auto;">
         <div class="padding-vertical padding-xhuge">
             <div class="margin-bottom margin-xlarge">
-              <div class="text-align-center">
+              <div class="text-align-center" style="margin: 0 6%;">
                 <h2 class="homepage_header_heading text-center"><span style="color:black">{{ $judul[1]->judul }}</span></h2>
                 <div class="homepage_header-text text-center">
                     {{ $judul[1]->Aboutdesk[0]->load('Aboutjudul')->text }}
@@ -127,7 +127,7 @@
         <div class="padding-vertical padding-xhuge">
           <div class="margin-bottom margin-medium">
             <div class="text-align-center">
-              <h2 data-w-id="9ffab59e-7706-d2be-ebf0-c06419292ec7" style="opacity:0" class="max-width-mobile">{{ $judul[3]->judul }}
+              <h2 data-w-id="9ffab59e-7706-d2be-ebf0-c06419292ec7" style="opacity:0.75" class="max-width-mobile">{{ $judul[3]->judul }}
                 </h2>
             </div>
           </div>
@@ -149,7 +149,7 @@
         <div class="padding-vertical padding-xhuge">
           <div class="margin-bottom margin-medium">
             <div class="text-align-center">
-              <h2 data-w-id="9ffab59e-7706-d2be-ebf0-c06419292ec7" style="opacity:0" class="max-width-mobile">{{ $judul[4]->judul }}
+              <h2 data-w-id="9ffab59e-7706-d2be-ebf0-c06419292ec7" style="font-style: italic; opacity:0" class="max-width-mobile">{{ $judul[4]->judul }}
                 </h2>
             </div>
           </div>
@@ -264,26 +264,46 @@
                   padding-bottom: 2%;"><span style="color:white">{{ $judul[5]->judul }}</span></h1>
                 </div>
 
-                <div style="margin: auto;background-color: #ffde3e;max-width: 85%;">
-                <div style="
-                background-color: #fff;
-                border-radius: 20px;
-                padding-left: 15px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                ">
+                <div style="margin: auto;max-width: 85%;">
+                <div style="">
                 <div class = "container">
-                    <div class = "row">
-                        <div class = "col-1">
-                            <div class="testimonials1_client-image-wrapper"><img src={{ $judul[5]->Aboutgambar[0]->load('Aboutjudul')->img }} loading="lazy" alt="" sizes="(max-width: 991px) 100vw, 72px" class="testimonials1_client-image" /></div>
-                        </div>
-                        <div class = "col">
-                            <div class = "testimonial1_name">
-                            {{ $judul[5]->Aboutdesk[0]->load('Aboutjudul')->text }}
+
+                    @for ($i=0; $i<3; $i++)
+                    <div style="background-color: #ffde3e; margin-bottom: 15px;">
+                        <div style="background-color: white; border-radius: 20px;
+                        padding-left: 15px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        margin: 1px 0;">
+                        <div class = "row" style="padding-bottom: 15px">
+                            <div class = "col-1" style="max-width: 7%;margin-bottom: auto;margin-right: auto;margin-left: auto;margin-top: 20px;">
+                                <div class="testimonials1_client-image-wrapper" style="border-radius: 0; margin:auto;"><img style="border-radius: 0; max-height:55px; width:auto" src="/Assets/data.JPG" loading="lazy" alt="" sizes="(max-width: 991px) 100vw, 72px" class="testimonials1_client-image img-fluid" /></div>
                             </div>
-                            <div class = "paragraph-2">{{ $judul[5]->Aboutdesk[1]->load('Aboutjudul')->text }}</div>
+                            <div class = "col">
+                                <p>
+                                <button style="
+                                float: right;
+                                background-color: white;
+                                color: black;
+                                border: none;"
+                                class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#toggle{{ $i }}" aria-expanded="false" aria-controls="toggle{{ $i }}">
+                                    +
+                                  </button></p>
+                                <div class = "testimonial1_name">
+                                {{ $judul[5]->Aboutdesk[0]->load('Aboutjudul')->text }}
+                                </div>
+                                <div class = "paragraph-2">{{ $judul[5]->Aboutdesk[1]->load('Aboutjudul')->text }}</div>
+                        </div>
+                        <div style="margin-top:15px" class="collapse" id="toggle{{ $i }}">
+                            <div class="card card-body" style="    margin: auto;
+                            margin-right: 10px;">
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo voluptates minima repellat nostrum odit suscipit quibusdam consectetur temporibus. Illum sunt delectus vitae quis, earum laborum placeat nobis vel corporis.
+                            </div>
+                          </div>
                     </div>
-                </div>
+                    </div>
+                    </div>
+                    @endfor
             </div>
 
           </div>
@@ -292,16 +312,6 @@
   </div>
   </div>
 
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown button
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-  </div>
 
   </header>
 @endsection

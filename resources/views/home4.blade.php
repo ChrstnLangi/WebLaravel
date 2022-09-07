@@ -14,7 +14,7 @@
             <div data-w-id="50b7de01-cde7-83ac-4864-6da0f131ca98" style="opacity:0" class="our-programs_component container">
               <div class="row">
                 @foreach ( $programs as $program)
-                <div id="w-node-a42de7b5-0d35-d0fa-e394-2cc3ed1bc063-2897c137" class="our-programs_item col-sm" style="margin-right: 10px; margin-top: 10px">
+                <div id="w-node-a42de7b5-0d35-d0fa-e394-2cc3ed1bc063-2897c137" class="our-programs_item col-sm" style="@if($loop->last)margin-right: 0%;@else margin-right: 5%; @endif  margin-top: 10px">
                     <div class="our-programs_image-wrapper mx-auto" style="
                     margin-bottom: 25px;
                     margin-top: -55px;">
@@ -23,7 +23,7 @@
                       <div class="our-programs_content" style="width: 100%;">
                         <h3 class="our-programs_heading mx-auto" style="max-width: 80%; padding-left:0;">{{ $program["judul"] }}</h3>
                         <div class="margin-vertical margin-small">
-                          <div class="paragraph homepage">{!! $program["desk"] !!}</div>
+                          <div class="paragraph homepage" style="margin-top: 20px;">{!! $program["desk"] !!}</div>
                         </div>
                       </div>
                       <div class="programs-button-wrapper"><a id="apply" href="/{{ $program["link"] }}" class="button_program is-our-programs w-button">Telusuri</a>

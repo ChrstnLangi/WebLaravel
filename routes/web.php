@@ -40,6 +40,12 @@ Route::get('/About/company-profile', function(About $About){
     ]);
 });
 
+Route::get('/About/company-staff', function(About $About){
+    return view('about.staff', [
+        'title' => "Company Staff"
+    ]);
+});
+
 Route::get('/Article', function(){
     return view('article.index', [
         'title' => "Article"

@@ -2,7 +2,7 @@
 
 @section('contain')
 <header>
-    <div style="background-image: url('/Assets/20220820_131708_0000.png'); background-size: cover;background-repeat: no-repeat">
+    <div style="background-image: url('/Assets/20220728_193418_0001.png'); background-size: cover;background-repeat: no-repeat">
       <div class="section-header">
         <div class="page-padding">
           <div class="container-large">

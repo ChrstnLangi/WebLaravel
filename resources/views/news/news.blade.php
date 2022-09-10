@@ -8,7 +8,7 @@
     <div class="homepage_header_heading" style="font-family: MontserratRegular; float: right; margin: -4.5% -8% 1% 0%; font-size: 90%;">123 Anywhere St., Any City</div>
     <div style="margin-left: 10%;margin-right: 10%;">
         <img class="img-fluid" src="/Assets/20220728_193418_0000.png" alt="">
-        <div style="background-color: #6d9ed8; padding: 1% 2% 2% 0%; margin-left: 75%; z-index: 999; margin-top: -5%; position: relative; margin-right: -3%;">
+        <div style="background-color: #6d9ed8; padding: 1% 2% 2% 0%; margin-left: 75%; z-index: 999; margin-top: -5%; position: relative; margin-right: -3%; border-radius: 10px;">
             <div class="homepage_header_heading" style="font-family: MontserratRegular; text-align: right; line-height: 140%; font-size: 120%;">
                 The 1st Journal
                 By Estelle Darcy

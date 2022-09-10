@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 03, 2022 at 10:18 AM
+-- Generation Time: Sep 10, 2022 at 01:17 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -40,10 +40,10 @@ CREATE TABLE `aboutdesks` (
 --
 
 INSERT INTO `aboutdesks` (`id`, `aboutjudul_id`, `text`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Gabung Sekarang!', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 2, 'Halo teman-teman mahasiswa kedokteran gigi maupun non kedokteran gigi yang ingin mengembangkan minat dan kreativitas kalian, yuk bergabung bersama DENTS.TALK melalui program internship kami yaitu “DentsArmy”. Disini kamu bisa memilih departemen yang sesuai dengan keminatan kamu loh! Yuk disimak departemen apa saja yang bisa kamu pilih.', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 6, 'Lorem ipsum', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(4, 6, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam commodi velit dolore deserunt neque, asperiores culpa, excepturi exercitationem accusamus eveniet dolorum? Praesentium iusto natus quis dolore illum quas laborum.', '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 1, 'Gabung Sekarang!', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 2, 'Halo teman-teman mahasiswa kedokteran gigi maupun non kedokteran gigi yang ingin mengembangkan minat dan kreativitas kalian, yuk bergabung bersama DENTS.TALK melalui program internship kami yaitu “DentsArmy”. Disini kamu bisa memilih departemen yang sesuai dengan keminatan kamu loh! Yuk disimak departemen apa saja yang bisa kamu pilih.', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 6, 'Lorem ipsum', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(4, 6, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam commodi velit dolore deserunt neque, asperiores culpa, excepturi exercitationem accusamus eveniet dolorum? Praesentium iusto natus quis dolore illum quas laborum.', '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -66,25 +66,25 @@ CREATE TABLE `aboutgambars` (
 --
 
 INSERT INTO `aboutgambars` (`id`, `aboutjudul_id`, `background`, `img`, `aboutreview_id`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, '/Assets/20220728_193418_0000.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 3, 1, '/Assets/20220728_193418_0001.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 3, 0, '/Assets/dummy_1.png', 1, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(4, 3, 0, '/Assets/dummy_2.png', 2, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(5, 3, 0, '/Assets/dummy_3.png', 3, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(6, 4, 0, '/Assets/20220728_193418_0000.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(7, 5, 0, '/Assets/dummy_1.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(8, 5, 0, '/Assets/dummy_2.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(9, 5, 0, '/Assets/dummy_3.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(10, 5, 0, '/Assets/dummy_4.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(11, 5, 0, '/Assets/dummy_4.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(12, 5, 0, '/Assets/dummy_3.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(13, 5, 0, '/Assets/dummy_2.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(14, 5, 0, '/Assets/dummy_1.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(15, 6, 1, '/Assets/20220728_193418_0002.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(16, 6, 0, '/Assets/dummy_1.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(17, 6, 0, '/Assets/dummy_2.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(18, 6, 0, '/Assets/dummy_3.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(19, 6, 0, '/Assets/dummy_4.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 1, 1, '/Assets/20220728_193418_0000.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 3, 1, '/Assets/20220728_193418_0001.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 3, 0, '/Assets/dummy_1.png', 1, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(4, 3, 0, '/Assets/dummy_2.png', 2, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(5, 3, 0, '/Assets/dummy_3.png', 3, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(6, 4, 0, '/Assets/20220728_193418_0000.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(7, 5, 0, '/Assets/dummy_1.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(8, 5, 0, '/Assets/dummy_2.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(9, 5, 0, '/Assets/dummy_3.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(10, 5, 0, '/Assets/dummy_4.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(11, 5, 0, '/Assets/dummy_4.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(12, 5, 0, '/Assets/dummy_3.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(13, 5, 0, '/Assets/dummy_2.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(14, 5, 0, '/Assets/dummy_1.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(15, 6, 1, '/Assets/20220728_193418_0002.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(16, 6, 0, '/Assets/dummy_1.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(17, 6, 0, '/Assets/dummy_2.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(18, 6, 0, '/Assets/dummy_3.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(19, 6, 0, '/Assets/dummy_4.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -105,12 +105,12 @@ CREATE TABLE `aboutjuduls` (
 --
 
 INSERT INTO `aboutjuduls` (`id`, `about_id`, `judul`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Kembangkan Minat dan Kreativitas Kamu bersama DENTS.TALK Internship Program “DentsArmy”!', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 1, 'Salurkan Ketertarikanmu', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 1, 'Dengar Apa Yang Mereka Katakan Saat Menjadi DentsArmy', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(4, 1, 'Magang Dimanapun Kamu Berada Secara Online!', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(5, 1, 'Explore Yourself at DENTS.TALK!', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(6, 1, 'Apa Saja Dapartemen Yang Dapat Kamu Pilih', '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 1, 'Kembangkan Minat dan Kreativitas Kamu bersama DENTS.TALK Internship Program <br>“DentsArmy”!', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 1, 'Salurkan Ketertarikanmu', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 1, 'Dengar Apa Yang Mereka Katakan Saat Menjadi DentsArmy', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(4, 1, 'Magang Dimanapun Kamu Berada Secara Online!', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(5, 1, 'Explore Yourself at DENTS.TALK!', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(6, 1, 'Apa Saja Dapartemen Yang Dapat Kamu Pilih', '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -132,9 +132,9 @@ CREATE TABLE `aboutreviews` (
 --
 
 INSERT INTO `aboutreviews` (`id`, `text`, `nama`, `role`, `created_at`, `updated_at`) VALUES
-(1, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.', 'Lorem ipsum', 'dolor sit', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.', 'Dolor sit', 'Lorem ipsum', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.', 'Dolor sit', 'Lorem ipsum', '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.', 'Lorem ipsum', 'dolor sit', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.', 'Dolor sit', 'Lorem ipsum', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.', 'Dolor sit', 'Lorem ipsum', '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -155,8 +155,9 @@ CREATE TABLE `abouts` (
 --
 
 INSERT INTO `abouts` (`id`, `nama`, `slug`, `created_at`, `updated_at`) VALUES
-(1, 'Internship Program', 'internship-program', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'Company Profile', 'company-profile', '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'Internship Program', 'internship-program', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'Company Profile', 'company-profile', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'Company Staff', 'company-staff', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -180,7 +181,7 @@ CREATE TABLE `articles` (
 --
 
 INSERT INTO `articles` (`id`, `judul`, `desk`, `img1`, `img2`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, ' ', ' ', ' ', ' ', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, ' ', ' ', ' ', ' ', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -238,15 +239,15 @@ CREATE TABLE `gambars` (
 --
 
 INSERT INTO `gambars` (`id`, `img`, `background`, `page_id`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, '/Assets/20220728_193425_0000.png', 1, 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, '/Assets/website-poster hands onbaru (1).png', 0, 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, '/Assets/20220728_193433_0001.png', 1, 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(4, '/Assets/website-poster hands onbaru (1).png', 0, 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(5, '/Assets/20220728_194108_0000.png', 1, 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(6, '/Assets/website-market-1.png', 0, 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(7, '/Assets/20220728_193433_0001.png', 1, 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(8, '/Assets/website-market-1.png', 0, 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(9, '/Assets/20220728_193407_0000.png', 1, 3, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, '/Assets/20220728_193425_0000.png', 1, 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, '/Assets/website-poster hands onbaru (1).png', 0, 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, '/Assets/20220728_193433_0001.png', 1, 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(4, '/Assets/website-poster hands onbaru (1).png', 0, 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(5, '/Assets/20220728_194108_0000.png', 1, 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(6, '/Assets/website-market-1.png', 0, 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(7, '/Assets/20220728_193433_0001.png', 1, 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(8, '/Assets/website-market-1.png', 0, 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(9, '/Assets/20220728_193407_0000.png', 1, 3, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -269,9 +270,9 @@ CREATE TABLE `helps` (
 --
 
 INSERT INTO `helps` (`id`, `judul`, `desk`, `img`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_1.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_2.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_3.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_1.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_2.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_3.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -293,8 +294,8 @@ CREATE TABLE `hireds` (
 --
 
 INSERT INTO `hireds` (`id`, `name`, `img`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'Dents.Talk', 'Assets/13_20220719_015826_0012.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'PDGI', 'Assets/8_20220719_015826_0007.png', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'Dents.Talk', 'Assets/13_20220719_015826_0012.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'PDGI', 'Assets/8_20220719_015826_0007.png', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -318,7 +319,7 @@ CREATE TABLE `homepages` (
 --
 
 INSERT INTO `homepages` (`id`, `judul_hitam`, `judul_putih`, `desk`, `button`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'Boots Your Knowledge', 'In Dentistry', 'Belajar langsung dari spesialis-spesialis terkemuka di bidangnya bersama DENTS.TALK Indonesia. Jelajahi bidang spesialisis yang manarik perhatian kamu. Hadir untuk mahasiswa dan dokter gigi di seluruh Indonesia', 'Explore Our Programs', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'Boots Your Knowledge', 'In Dentistry', 'Belajar langsung dari spesialis-spesialis terkemuka di bidangnya bersama DENTS.TALK Indonesia. Jelajahi bidang spesialisis yang manarik perhatian kamu. Hadir untuk mahasiswa dan dokter gigi di seluruh Indonesia', 'Explore Our Programs', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -341,11 +342,11 @@ CREATE TABLE `joins` (
 --
 
 INSERT INTO `joins` (`id`, `judul`, `desk`, `img`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'Dolor sit', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 'Amet consectetur', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(4, 'Adipisicing elit', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(5, 'Quas minus', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'Dolor sit', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'Amet consectetur', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(4, 'Adipisicing elit', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(5, 'Quas minus', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', ' ', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -408,9 +409,9 @@ CREATE TABLE `options` (
 --
 
 INSERT INTO `options` (`id`, `judul`, `desk`, `img`, `note`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_1.png', ' ', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_2.png', ' ', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_3.png', ' ', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_1.png', ' ', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_2.png', ' ', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_3.png', ' ', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -433,11 +434,13 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`id`, `judul`, `slug`, `web_id`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'DentsLearn HandsOn', 'dentslearn-handson', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'DentsLearn Webinar', 'dentslearn-webinar', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 'DentsPractice', 'dentspractice', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(4, 'Internship Program', 'internship-program', 4, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(5, 'Company Profile', 'company-profile', 4, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'DentsLearn HandsOn', 'dentslearn-handson', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'DentsLearn Webinar', 'dentslearn-webinar', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'DentsPractice', 'dentspractice', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(4, 'Internship Program', 'internship-program', 4, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(5, 'Company Profile', 'company-profile', 4, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(6, 'Company Staff', 'company-staff', 4, NULL, NULL, NULL),
+(7, 'Our Speaker', 'our-speaker', 4, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -474,9 +477,9 @@ CREATE TABLE `programs` (
 --
 
 INSERT INTO `programs` (`id`, `judul`, `desk`, `img`, `link`, `mini_link`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'DentsLearn Hands On', 'Merupakan suatu program yang dapat meningkatkan skill keterampilan dokter gigi dalam melakukan tindakan praktik dengan pemberian materi serta praktik langsung yang dibimbing oleh pemateri yang memiliki kompetensi.', 'Assets/4_20220719_015826_0003.png', 'program_1', 'mini_program_1', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'DentsLearn Webinar', 'Merupakan seminar mengenai topik kedokteran gigi yang mendatangkan pemateri berkompeten di bidangnya serta bekerja sama dengan PDGI maupun organisasi terkait.', 'Assets/5_20220719_015826_0004.png', 'program_2', 'mini_program_2', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 'DentsPractice', 'Merupakan suatu program yang menyediakan fasilitas bagi mahasiswa kedokteran gigi untuk dapat melakukan skill lab di rumah masing-masing yang dikemas dalam materi yang mudah dipahami.', 'Assets/6_20220719_015826_0005.png', 'program_3', 'mini_program_3', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'DentsLearn Hands On', 'Merupakan suatu program yang dapat meningkatkan skill keterampilan dokter gigi dalam melakukan tindakan praktik dengan pemberian materi serta praktik langsung yang dibimbing oleh pemateri yang memiliki kompetensi.', 'Assets/Copy of vector-8.png', 'program_1', 'mini_program_1', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'DentsLearn Webinar', 'Merupakan seminar mengenai topik kedokteran gigi yang mendatangkan pemateri berkompeten di bidangnya serta bekerja sama dengan PDGI maupun organisasi terkait.', 'Assets/Copy of vector-7.png', 'program_2', 'mini_program_2', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'DentsPractice', '<div\r\nstyle = \"\r\ntext-align: center;\r\npadding-top: 35%;\r\nfont-size: 38.7128px;\r\ntext-transform: uppercase;\r\ncolor: white;\r\nline-height: 45px;\r\n\">\r\nComing soon\r\n</div>', 'Assets/Copy of vector-2.png', 'program_3', 'mini_program_3', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -501,14 +504,14 @@ CREATE TABLE `reviews` (
 --
 
 INSERT INTO `reviews` (`id`, `judul`, `desk`, `img`, `role`, `link`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_1.png', 'I', 'Lorem_ipsum_I', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_2.png', 'II', 'Lorem_ipsum_II', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_3.png', 'III', 'Lorem_ipsum_III', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(4, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_4.png', 'IV', 'Lorem_ipsum_IV', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(5, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_4.png', 'IV', 'Lorem_ipsum_IV', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(6, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_3.png', 'III', 'Lorem_ipsum_III', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(7, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_2.png', 'II', 'Lorem_ipsum_II', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(8, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_1.png', 'I', 'Lorem_ipsum_I', NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_1.png', 'I', 'Lorem_ipsum_I', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_2.png', 'II', 'Lorem_ipsum_II', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_3.png', 'III', 'Lorem_ipsum_III', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(4, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_4.png', 'IV', 'Lorem_ipsum_IV', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(5, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_4.png', 'IV', 'Lorem_ipsum_IV', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(6, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_3.png', 'III', 'Lorem_ipsum_III', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(7, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_2.png', 'II', 'Lorem_ipsum_II', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(8, 'Lorem ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.', 'Assets/dummy_1.png', 'I', 'Lorem_ipsum_I', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -530,24 +533,24 @@ CREATE TABLE `texts` (
 --
 
 INSERT INTO `texts` (`id`, `text`, `page_id`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'DentsLearn:', 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'Hands On', 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 'Dapatkan ilmu-ilmu baru seputar kedokteran gigi dan kembangkan skill kedokteran gigimu di DentsLearn: Hands On! <br>Hands On juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.', 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(4, 'Lihat Hands On Bulan Ini!', 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(5, 'Hands On yang Akan Datang', 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(6, '<div style=\"font-weight: 400;\">DentsLearn: HandsOn 17</div><div= style=\"font-weight: 700; font-style: italic;\">Operculectomy Using Conventional Technic</div>', 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(7, 'DentsLearn: Hands On Sebelumnya', 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(8, '<div style=\"font-weight: 400;\">DentsLearn: HandsOn 13</div><div= style=\"font-weight: 700; font-style: italic;\">Simple Dental Wire</div>', 1, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(9, 'DentsLearn:', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(10, 'Webinar', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(11, 'Ketahui sudut pandang dari narasumber yang berkompeten dalam menunjang karir dan pendidikan di kedokteran gigi.<br>Webinar juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(12, 'Lihat Webinar Bulan Ini!', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(13, 'Webinar yang Akan Datang', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(14, '<div style=\"font-weight: 400;\">DentsLearn: Webinar 17</div><div= style=\"font-weight: 700; font-style: italic;\">Operculectomy: When We Need That Procedure?</div>', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(15, 'DentsLearn: Webinar Sebelumnya', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(16, '\r\n\r\n<div style=\"font-weight: 400;\">DentsLearn: Webinar 13</div><div= style=\"font-weight: 700; font-style: italic;\">Penatalaksanaan Trauma Dentoalveolar pada prakter sehari hari</div>', 2, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(17, 'DentsPractice', 3, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(18, 'COMING SOON!', 3, NULL, '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'DentsLearn:', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'Hands On', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'Dapatkan ilmu-ilmu baru seputar kedokteran gigi dan kembangkan skill kedokteran gigimu di DentsLearn: Hands On! <br><br>Hands On juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(4, 'Lihat Hands On Bulan Ini!', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(5, 'Hands On yang Akan Datang', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(6, '<div style=\"font-weight: 400;\">DentsLearn: HandsOn 17</div><div= style=\"font-weight: 700; font-style: italic;\">Operculectomy Using Conventional Technic</div>', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(7, 'DentsLearn: Hands On Sebelumnya', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(8, '<div style=\"font-weight: 400;\">DentsLearn: HandsOn 13</div><div= style=\"font-weight: 700; font-style: italic;\">Simple Dental Wire</div>', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(9, 'DentsLearn:', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(10, 'Webinar', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(11, 'Ketahui sudut pandang dari narasumber yang berkompeten dalam menunjang karir dan pendidikan di kedokteran gigi.<br><br>Webinar juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(12, 'Lihat Webinar Bulan Ini!', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(13, 'Webinar yang Akan Datang', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(14, '<div style=\"font-weight: 400;\">DentsLearn: Webinar 17</div><div= style=\"font-weight: 700; font-style: italic;\">Operculectomy: When We Need That Procedure?</div>', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(15, 'DentsLearn: Webinar Sebelumnya', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(16, '\r\n\r\n<div style=\"font-weight: 400;\">DentsLearn: Webinar 13</div><div= style=\"font-weight: 700; font-style: italic;\">Penatalaksanaan Trauma Dentoalveolar pada prakter sehari hari</div>', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(17, 'DentsPractice', 3, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(18, 'COMING SOON!', 3, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -575,7 +578,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nama`, `umur`, `NPA`, `nohp`, `email`, `email_verified_at`, `password`, `role`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 0, '-', '-', 'Admin@gmail.com', NULL, '$2y$10$f5HxaSoc.ebI/P.WIEixiO64T5d3U3dE07kTUesVcXYwtALBrfNje', 'Admin', NULL, '2022-08-21 20:20:22', '2022-08-21 20:20:22');
+(1, 'Admin', 0, '-', '-', 'Admin@gmail.com', NULL, '$2y$10$cSM7OFD2qr69tGfx5XDeQO8dFRglM6XOFCobmLG6yVPSuOtRfiIjO', 'Admin', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -595,10 +598,10 @@ CREATE TABLE `webs` (
 --
 
 INSERT INTO `webs` (`id`, `judul`, `created_at`, `updated_at`) VALUES
-(1, 'Home', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(2, 'Program', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(3, 'Article', '2022-08-21 20:20:21', '2022-08-21 20:20:21'),
-(4, 'About', '2022-08-21 20:20:21', '2022-08-21 20:20:21');
+(1, 'Home', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'Program', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'Article', '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(4, 'About', '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 --
 -- Indexes for dumped tables
@@ -772,7 +775,7 @@ ALTER TABLE `aboutreviews`
 -- AUTO_INCREMENT for table `abouts`
 --
 ALTER TABLE `abouts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `articles`
@@ -838,7 +841,7 @@ ALTER TABLE `options`
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `programs`

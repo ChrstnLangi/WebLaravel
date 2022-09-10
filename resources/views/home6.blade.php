@@ -23,7 +23,7 @@
                               <div class="testimonials1_client-image-wrapper"><img src={{ $review[$i]['img'] }} loading="lazy" alt="" sizes="(max-width: 991px) 100vw, 72px" class="testimonials1_client-image" /></div>
                               <div class="testimonials1_client-details">
                                 <div class="testimonial1_name">{{ $review[$i]['judul'] }}</div>
-                                <div class="testimonial1_role text-style-muted">{{ $review[$i]['role'] }}</div>
+                                <div class="testimonial1_role text-style-muted" style="font-family: 'poppins';">{{ $review[$i]['role'] }}</div>
                               </div>
                             </div>
                             <p class="paragraph-2">&quot;{{ $review[$i]['desk'] }}&quot;</p><a href={{ $review[$i]['link'] }} target="_blank" class="testimonial-link-block-wrapper w-inline-block">

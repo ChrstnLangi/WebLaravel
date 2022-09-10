@@ -48,7 +48,7 @@
                           @if(isset($page->Text[2]->text)){!! $page->Text[2]->text !!}@endif
                       </div>
                     </div>
-                    <div data-w-id="c3733106-a61e-156e-654f-c21c9b4597c8" class="margin-top margin-medium is-custom-margin"><a href="#our-programs" data-w-id="c3733106-a61e-156e-654f-c21c9b4597c9" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0); font-size: 130%; margin-left:0%" class="button_program w-button">
+                    <div data-w-id="c3733106-a61e-156e-654f-c21c9b4597c8" class="margin-top margin-medium is-custom-margin"><a href="#our-programs" data-w-id="c3733106-a61e-156e-654f-c21c9b4597c9" style="text-transform: capitalize; :0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0); font-size: 130%; margin-left:0%" class="button_program w-button">
                       @if(isset($page->Text[3]->text)){{ $page->Text[3]->text }}@endif
                   </a></div>
                   </div>
@@ -61,7 +61,7 @@
     </div>
     </header>
 
-    <div class="background-webinar">
+    <div class="background-webinar" id="our-programs">
       <h2 class="homepage_header_heading text-center" style="padding: 1%; font-size: 190%">@if(isset($page->Text[4]->text)){{ $page->Text[4]->text }}@endif</h2>
       <img style ="width:75%" class="rounded mx-auto d-block" src="@if (isset($page->Gambar->where('background', 0)->skip(1)->first()->img)){{ $page->Gambar->where('background', 0)->skip(1)->first()->img }}@endif" alt="webinar" class="rounded mx-auto d-block">
       <div class="homepage_header_heading text-center" style="padding-top: 2%; padding-bottom: 3%; font-size: 190%; line-height:145%; font-family: MontserratRegular;">@if(isset($page->Text[5]->text)){!! $page->Text[5]->text !!}@endif</div>

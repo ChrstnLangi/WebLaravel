@@ -65,7 +65,10 @@
       <h2 class="homepage_header_heading text-center" style="padding: 1%; font-size: 190%">@if(isset($page->Text[4]->text)){{ $page->Text[4]->text }}@endif</h2>
       <img style ="width:75%" class="rounded mx-auto d-block" src="@if (isset($page->Gambar->where('background', 0)->skip(1)->first()->img)){{ $page->Gambar->where('background', 0)->skip(1)->first()->img }}@endif" alt="webinar" class="rounded mx-auto d-block">
       <div class="homepage_header_heading text-center" style="padding-top: 2%; padding-bottom: 3%; font-size: 190%; line-height:145%; font-family: MontserratRegular;">@if(isset($page->Text[5]->text)){!! $page->Text[5]->text !!}@endif</div>
-  </div>
+      <div data-w-id="c3733106-a61e-156e-654f-c21c9b4597c8" class="margin-top margin-medium is-custom-margin" style="display: block; margin: auto; padding-bottom: 5%;"><a href="#our-programs" data-w-id="c3733106-a61e-156e-654f-c21c9b4597c9" style="text-transform: capitalize; :0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0); font-size: 130%; margin-left:0%; padding: 20% 100%;" class="button_program w-button">
+        Daftar
+    </a></div>
+    </div>
 
   <div style="background-image: url('@if (isset($page->Gambar->where('background', 1)->skip(1)->first()->img)){{ $page->Gambar->where('background', 1)->skip(1)->first()->img }}@endif'); padding: 10%; background-size: cover; background-position:center;background-repeat: no-repeat">
       <h2 class="homepage_header_heading text-center" style="font-size: 190%; margin-top: -10%; margin-bottom: 3%">@if(isset($page->Text[6]->text)){{ $page->Text[6]->text }}@endif</h2>

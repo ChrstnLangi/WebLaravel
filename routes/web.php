@@ -52,6 +52,13 @@ Route::get('/Article', function(){
     ]);
 });
 
+Route::get('/sign-in', function(){
+    return view('article.webinar_sign', [
+        'title' => "Webinar"
+    ]);
+});
+
+
 
 Route::get('/About/{About:slug}', function(About $About){
     return view('about.internship', [
@@ -71,7 +78,11 @@ Route::get('/Program/{page:slug}', function(Page $page){
     ]);
 })->scopeBindings();
 
-
+Route::get('/article/post', function() {
+    return view('article.news', [
+        'title' => "Article"
+    ]);
+});
 
 Route::resource('/dashboard/about', internship::class)->middleware('auth');
 

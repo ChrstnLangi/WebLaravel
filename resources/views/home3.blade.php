@@ -23,16 +23,7 @@
                     <h3 class="why-join_card-heading is-custom-width text-align-center" style="margin-top: 5%;">{{ $joins[2]['judul'] }}<br /></h3>
                     <p class="text-align-center" style="font-family: poppins;color: black;font-weight: 400;">{{ $joins[2]['desk'] }}<br /></p>
                   </div>
-                  <div id="w-node-c1676b6c-5d91-aaab-8a6a-9207dcc13152-2897c137" data-w-id="c1676b6c-5d91-aaab-8a6a-9207dcc13152" class="why-join_lower-row-card">
-                    <div class="why-join_icon-wrapper"><img src={{ $joins[3]['img'] }} loading="lazy" alt="" class="around-icon" /></div>
-                    <h3 class="why-join_card-heading text-align-center bottom-boxes" style="margin-top: 5%;">{{ $joins[3]['judul'] }}<br /></h3>
-                    <p class="text-align-center" style="font-family: poppins;color: black;font-weight: 400;">{{ $joins[3]['desk'] }}<br /></p>
-                  </div>
-                  <div id="w-node-d35938d4-4ac5-2784-e41f-bd60f810eb80-2897c137" data-w-id="d35938d4-4ac5-2784-e41f-bd60f810eb80" class="why-join_lower-row-card is-custom-padding">
-                    <div class="why-join_icon-wrapper"><img src={{ $joins[4]['img'] }} loading="lazy" alt="" class="image" /></div>
-                    <h3 class="why-join_card-heading text-align-center bottom-boxes" style="margin-top: 5%;">{{ $joins[4]['judul'] }}<br /></h3>
-                    <p class="text-align-center has-custom-width" style="font-family: poppins;color: black;font-weight: 400;">{{ $joins[4]['desk'] }} <br /></p>
-                  </div>
+
                 </div>
               </div>
             </div>

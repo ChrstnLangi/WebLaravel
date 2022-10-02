@@ -3,7 +3,7 @@
 @section('contain')
 <header>
     <section id = "Head">
-        <div style="background-image: url('/Assets/20220728_193418_0000.png'); background-size: cover; background-position:center; padding: 190px 0px;">
+        <div style="background-image: url('/Assets/2_20220908_160225_0001.png'); background-size: cover; background-position:center; padding: 190px 0px;">
             <div class="section-header" style = "padding-top: 8rem; padding-bottom: 6.5rem">
                 <div class="page-padding">
                   <div class="container-large">
@@ -117,39 +117,22 @@
     <div class="swiper-container" style="padding-bottom: 5%; padding-top: 5%;">
         <h2 style="color: black; text-align:center; font-size:46px">Creative Content Dapartment</h2>
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src="/Assets/Copy of vector-7.png" />
-          <div class="testosotto">
-            <div style="font-family: 'MontserratSemiBold';font-size: 30px;">Drg. yaayayay</div><br><br>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 1:</div>
-            <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to lepas tangan tanpa terlihat jelas"</div>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 Agustus 2022</div><br>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 2:</div>
-            <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to be fired at work"</div>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 September 2021</div>
+
+        @foreach ($our->where('speaker_id', 1) as $our1 )
+        <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src=" @if (isset($our1->img))
+            {{ '/storage/' . $our1->img }}
+            @endif" />
+          <div class="testosotto" style="font-weight: 400; font-size: 20px;">
+            <div style="font-family: 'MontserratSemiBold';font-size: 20px;"> @if (isset($our1->nama))
+                {!! $our1->nama !!}
+            @endif
+        </div><br><br>
+            @if (isset($our1->text))
+            {!! $our1->text !!}
+            @endif
         </div>
         </div>
-        <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src="/Assets/Copy of vector-2.png" />
-            <div class="testosotto">
-              <div style="font-family: 'MontserratSemiBold';font-size: 30px;">xxx</div><br><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 1:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to lepas tangan tanpa terlihat jelas"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 Agustus 2022</div><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 2:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to be fired at work"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 September 2021</div>
-          </div>
-          </div>
-          <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src="/Assets/Copy of vector-8.png" />
-            <div class="testosotto">
-              <div style="font-family: 'MontserratSemiBold';font-size: 30px;">xxx</div><br><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 1:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to lepas tangan tanpa terlihat jelas"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 Agustus 2022</div><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 2:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to be fired at work"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 September 2021</div>
-          </div>
-          </div>
+        @endforeach
 
 
       </div>
@@ -164,38 +147,21 @@
     <div class="swiper-container" style="padding-bottom: 5%; padding-top: 5%; background-image:url('/Assets/20220826_005223_0001.png')">
         <h2 style="color: black; text-align:center; font-size:46px">Nucleus</h2>
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src="/Assets/Copy of vector-7.png" />
-          <div class="testosotto" >
-            <div style="font-family: 'MontserratSemiBold';font-size: 30px;">Drg. yaayayay</div><br><br>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 1:</div>
-            <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to lepas tangan tanpa terlihat jelas"</div>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 Agustus 2022</div><br>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 2:</div>
-            <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to be fired at work"</div>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 September 2021</div>
+        @foreach ($our->where('speaker_id', 2) as $our2 )
+        <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src=" @if (isset($our2->img))
+            {{ '/storage/' . $our2->img }}
+            @endif" />
+          <div class="testosotto" style="font-weight: 400; font-size: 20px;">
+            <div style="font-family: 'MontserratSemiBold';font-size: 20px;"> @if (isset($our2->nama))
+                {!! $our2->nama !!}
+            @endif
+        </div><br><br>
+            @if (isset($our2->text))
+            {!! $our2->text !!}
+            @endif
         </div>
         </div>
-        <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src="/Assets/Copy of vector-2.png" />
-            <div class="testosotto" >
-              <div style="font-family: 'MontserratSemiBold';font-size: 30px;">xxx</div><br><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 1:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to lepas tangan tanpa terlihat jelas"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 Agustus 2022</div><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 2:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to be fired at work"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 September 2021</div>
-          </div>
-          </div>
-          <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src="/Assets/Copy of vector-8.png" />
-            <div class="testosotto" >
-              <div style="font-family: 'MontserratSemiBold';font-size: 30px;">xxx</div><br><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 1:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to lepas tangan tanpa terlihat jelas"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 Agustus 2022</div><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 2:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to be fired at work"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 September 2021</div>
-          </div>
+        @endforeach
           </div>
 
 
@@ -209,38 +175,21 @@
     <div class="swiper-container" style="padding-bottom: 5%; padding-top: 5%; background-image:url('/Assets/20220826_005223_0002.png')">
         <h2 style="color: black; text-align:center; font-size:46px">DentsArmy Upgrading Class</h2>
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src="/Assets/Copy of vector-7.png" />
-          <div class="testosotto" >
-            <div style="font-family: 'MontserratSemiBold';font-size: 30px;">Drg. yaayayay</div><br><br>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 1:</div>
-            <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to lepas tangan tanpa terlihat jelas"</div>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 Agustus 2022</div><br>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 2:</div>
-            <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to be fired at work"</div>
-            <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 September 2021</div>
+        @foreach ($our->where('speaker_id', 3) as $our3 )
+        <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src=" @if (isset($our3->img))
+            {{ '/storage/' . $our3->img }}
+            @endif" />
+          <div class="testosotto" style="font-weight: 400; font-size: 20px;">
+            <div style="font-family: 'MontserratSemiBold';font-size: 20px;"> @if (isset($our3->nama))
+                {!! $our3->nama !!}
+            @endif
+        </div><br><br>
+            @if (isset($our3->text))
+            {!! $our3->text !!}
+            @endif
         </div>
         </div>
-        <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src="/Assets/Copy of vector-2.png" />
-            <div class="testosotto" >
-              <div style="font-family: 'MontserratSemiBold';font-size: 30px;">xxx</div><br><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 1:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to lepas tangan tanpa terlihat jelas"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 Agustus 2022</div><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 2:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to be fired at work"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 September 2021</div>
-          </div>
-          </div>
-          <div class="swiper-slide"><img style="max-height: 560px; width:auto; margin-bottom:-5%;" src="/Assets/Copy of vector-8.png" />
-            <div class="testosotto">
-              <div style="font-family: 'MontserratSemiBold';font-size: 30px;">xxx</div><br><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 1:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to lepas tangan tanpa terlihat jelas"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 Agustus 2022</div><br>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">DentsLearn 2:</div>
-              <div style="font-family: 'MontserratSemiBold'; font-style:italic; font-size: 20px;">"How to be fired at work"</div>
-              <div style="font-weight: 100;font-family: 'MontserratRegular'; font-size: 20px;">10 September 2021</div>
-          </div>
+        @endforeach
           </div>
 
 

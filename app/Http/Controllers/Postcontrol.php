@@ -13,7 +13,9 @@ use App\Models\Article;
 use App\Models\Homepage;
 use App\Models\About;
 use App\Models\Aboutjudul;
+use App\Models\Category;
 use App\Models\Post;
+use App\Models\Posts;
 class Postcontrol extends Controller
 {
     public function index ()
@@ -32,5 +34,20 @@ class Postcontrol extends Controller
             "homepage" => Homepage::content(),
            "articles" => Article::content()]);
 
+    }
+
+    public function article() {
+        return view('posts.index', [
+            "title" => "Article",
+            "post" => Article::all(),
+            "categories" => Category::all()
+        ]);
+    }
+
+    public function show(Article $article) {
+        return view('posts.news', [
+            "title" => "Article Post",
+            "article" => $article
+        ]);
     }
 }

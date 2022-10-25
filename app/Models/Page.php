@@ -8,10 +8,12 @@ use App\Models\Gambar;
 use App\Models\Comment;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Page extends Model
 {
     use HasFactory;
+    protected $guarded =['id'];
 
     public static function content()
     {
@@ -34,6 +36,10 @@ class Page extends Model
     public function Web()
     {
         return $this->belongsTo(Web::class);
+    }
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 
 }

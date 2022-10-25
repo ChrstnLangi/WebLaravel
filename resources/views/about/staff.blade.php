@@ -3,7 +3,7 @@
 @section('contain')
 <header>
     <section id = "Head">
-    <div style="background-image: url('/Assets/20220728_193418_0000.png'); background-size: cover; background-position:center; padding: 190px 0px;">
+    <div style="background-image: url('/Assets/1_20220908_160225_0000.png'); background-size: cover; background-position:center; padding: 190px 0px;">
         <div class="section-header" style = "padding-top: 8rem; padding-bottom: 6.5rem">
             <div class="page-padding">
               <div class="container-large">
@@ -29,7 +29,7 @@
 
     <section id = "Primary">
     <div style="background-image: url('/Assets/20220826_010711_0001.png'); background-size: cover; background-position:center;">
-        <div class="section-header" style="margin-bottom: 0%;">
+        <div class="section-header" style="margin-bottom: 0%; padding-bottom: 50px;">
             <div class="page-padding" style = "
             width: 100%;
             max-width: 77rem;
@@ -41,70 +41,106 @@
                         <div>
                             <div class="container text-center">
                                 <div class="row" style="width: 100%">
-                                  <div class="col">
-                                    <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -24%;">
-                                        Nathan
-                                    </div>
-                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                        Chief Marketing Officer
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -24%;">
-                                        David Octavian
-                                    </div>
-                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                        Chief Excecutive Officer
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -24%;">
-                                        Grace Maria
-                                    </div>
-                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                        Chief Operation Officer
-                                    </div>
-                                  </div>
+                                    <div class="col">
+                                        <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->first()->img))
+                                        {{ '/storage/' . $our->first()->img }}
+                                        @endif" alt="">
+                                        <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                            @if (isset($our->first()->nama))
+                                                {!! $our->first()->nama !!}
+                                            @endif
+                                        </div>
+                                        <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                            @if (isset($our->first()->role))
+                                            {!! $our->first()->role !!}
+                                            @endif
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->skip(1)->first()->img))
+                                        {{ '/storage/' . $our->skip(1)->first()->img }}
+                                        @endif" alt="">
+                                        <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                            @if (isset($our->skip(1)->first()->nama))
+                                                {!! $our->skip(1)->first()->nama !!}
+                                            @endif
+                                        </div>
+                                        <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                            @if (isset($our->skip(1)->first()->role))
+                                            {!! $our->skip(1)->first()->role !!}
+                                            @endif
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->skip(2)->first()->img))
+                                        {{ '/storage/' . $our->skip(2)->first()->img }}
+                                        @endif" alt="">
+                                        <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                            @if (isset($our->skip(2)->first()->nama))
+                                                {!! $our->skip(2)->first()->nama !!}
+                                            @endif
+                                        </div>
+                                        <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                            @if (isset($our->skip(2)->first()->role))
+                                            {!! $our->skip(2)->first()->role !!}
+                                            @endif
+                                        </div>
+                                      </div>
                                 </div>
                               </div>
 
                               <div class="container text-center">
                                 <div class="row" style="width: 100%">
-                                  <div class="col">
-                                    <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                        Devani
-                                    </div>
-                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                        Strategic Advisor
-                                    </div>
-                                  </div>
+                                    <div class="col">
+                                        <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->skip(3)->first()->img))
+                                        {{ '/storage/' . $our->skip(3)->first()->img }}
+                                        @endif" alt="">
+                                        <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                            @if (isset($our->skip(3)->first()->nama))
+                                                {!! $our->skip(3)->first()->nama !!}
+                                            @endif
+                                        </div>
+                                        <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                            @if (isset($our->skip(3)->first()->role))
+                                            {!! $our->skip(3)->first()->role !!}
+                                            @endif
+                                        </div>
+                                      </div>
                                 </div>
                               </div>
 
                               <div class="container text-center">
                                 <div class="row" style="width: 100%">
-                                  <div class="col">
-                                    <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                        Devani
-                                    </div>
-                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                        Secretary
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                        XXX
-                                    </div>
-                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                        Secretary Assistant
-                                    </div>
-                                  </div>
+                                    <div class="col">
+                                        <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->skip(4)->first()->img))
+                                        {{ '/storage/' . $our->skip(4)->first()->img }}
+                                        @endif" alt="">
+                                        <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                            @if (isset($our->skip(4)->first()->nama))
+                                                {!! $our->skip(4)->first()->nama !!}
+                                            @endif
+                                        </div>
+                                        <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                            @if (isset($our->skip(4)->first()->role))
+                                            {!! $our->skip(4)->first()->role !!}
+                                            @endif
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->skip(5)->first()->img))
+                                        {{ '/storage/' . $our->skip(5)->first()->img }}
+                                        @endif" alt="">
+                                        <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                            @if (isset($our->skip(5)->first()->nama))
+                                                {!! $our->skip(5)->first()->nama !!}
+                                            @endif
+                                        </div>
+                                        <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                            @if (isset($our->skip(5)->first()->role))
+                                            {!! $our->skip(5)->first()->role !!}
+                                            @endif
+                                        </div>
+                                      </div>
                                 </div>
                               </div>
 
@@ -119,7 +155,7 @@
 
 <section id = "Creative-Content">
     <div style="background-image: url('/Assets/20220826_010711_0002.png'); background-size: cover; background-position:center;">
-        <div class="section-header" style="margin-bottom: 0%;">
+        <div class="section-header" style="margin-bottom: 0%; padding-bottom: 50px;">
             <div class="page-padding" style = "
             width: 100%;
             max-width: 77rem;
@@ -130,41 +166,60 @@
                         <h2 style="color: white; text-align:center; font-size:46px">Creative Content Dapartment</h2>
                         <div class="container text-center">
                             <div class="row" style="width: 100%">
-                              <div class="col">
-                                <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                    XXX
-                                </div>
-                                <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                    Head of Creative Content
-                                </div>
-                              </div>
-                              <div class="col">
-                                <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                    XXX
-                                </div>
-                                <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                    Vice Head of Creative Content
-                                </div>
-                              </div>
+                                <div class="col">
+                                    <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->where('team_id', 1)->skip(0)->first()->img))
+                                    {{ '/storage/' . $our->where('team_id', 1)->skip(0)->first()->img }}
+                                    @endif" alt="">
+                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                        @if (isset($our->where('team_id', 1)->skip(0)->first()->nama))
+                                            {!! $our->where('team_id', 1)->skip(0)->first()->nama !!}
+                                        @endif
+                                    </div>
+                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                        @if (isset($our->where('team_id', 1)->skip(0)->first()->role))
+                                        {!! $our->where('team_id', 1)->skip(0)->first()->role !!}
+                                        @endif
+                                    </div>
+                                  </div>
+
+                                  <div class="col">
+                                    <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->where('team_id', 1)->skip(1)->first()->img))
+                                    {{ '/storage/' . $our->where('team_id', 1)->skip(1)->first()->img }}
+                                    @endif" alt="">
+                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                        @if (isset($our->where('team_id', 1)->skip(1)->first()->nama))
+                                            {!! $our->where('team_id', 1)->skip(1)->first()->nama !!}
+                                        @endif
+                                    </div>
+                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                        @if (isset($our->where('team_id', 1)->skip(1)->first()->role))
+                                        {!! $our->where('team_id', 1)->skip(1)->first()->role !!}
+                                        @endif
+                                    </div>
+                                  </div>
                             </div>
                           </div>
 
                           <div class="container text-center">
                             <div class="row" style="width: 100%">
-
-                                @for ($i=1; $i<=5; $i++)
-                                <div class="col" style="min-width:352px">
-                                    <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                        XXX
+                                @foreach ($our->where('team_id', 1)->skip(2) as $our1 )
+                                <div class="col">
+                                    <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our1->img))
+                                    {{ '/storage/' . $our1->img }}
+                                    @endif" alt="">
+                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                        @if (isset($our1->nama))
+                                            {!! $our1->nama !!}
+                                        @endif
                                     </div>
                                     <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                        Member of Creative Content
+                                        @if (isset($our1->role))
+                                        {!! $our1->role !!}
+                                        @endif
                                     </div>
-                                </div>
-                                @endfor
+                                  </div>
+
+                                @endforeach
                             </div>
                           </div>
                 </div>
@@ -176,7 +231,7 @@
 
 <section id ="Creative-Design">
     <div style="background-image: url('/Assets/20220826_010711_0003.png'); background-size: cover; background-position:center;">
-        <div class="section-header" style="margin-bottom: 0%;">
+        <div class="section-header" style="margin-bottom: 0%; padding-bottom: 50px;">
             <div class="page-padding" style = "
             width: 100%;
             max-width: 77rem;
@@ -187,41 +242,61 @@
                         <h2 style="color: white; text-align:center; font-size:46px">Creative Design Dapartment</h2>
                         <div class="container text-center">
                             <div class="row" style="width: 100%">
-                              <div class="col">
-                                <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                    XXX
-                                </div>
-                                <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                    Head of Creative Design
-                                </div>
-                              </div>
-                              <div class="col">
-                                <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                    XXX
-                                </div>
-                                <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                    Vice Head of Creative Design
-                                </div>
-                              </div>
+                                <div class="col">
+                                    <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->where('team_id', 2)->skip(0)->first()->img))
+                                    {{ '/storage/' . $our->where('team_id', 2)->skip(0)->first()->img }}
+                                    @endif" alt="">
+                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                        @if (isset($our->where('team_id', 2)->skip(0)->first()->nama))
+                                            {!! $our->where('team_id', 2)->skip(0)->first()->nama !!}
+                                        @endif
+                                    </div>
+                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                        @if (isset($our->where('team_id', 2)->skip(0)->first()->role))
+                                        {!! $our->where('team_id', 2)->skip(0)->first()->role !!}
+                                        @endif
+                                    </div>
+                                  </div>
+
+                                  <div class="col">
+                                    <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->where('team_id', 2)->skip(1)->first()->img))
+                                    {{ '/storage/' . $our->where('team_id', 2)->skip(1)->first()->img }}
+                                    @endif" alt="">
+                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                        @if (isset($our->where('team_id', 2)->skip(1)->first()->nama))
+                                            {!! $our->where('team_id', 2)->skip(1)->first()->nama !!}
+                                        @endif
+                                    </div>
+                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                        @if (isset($our->where('team_id', 2)->skip(1)->first()->role))
+                                        {!! $our->where('team_id', 2)->skip(1)->first()->role !!}
+                                        @endif
+                                    </div>
+                                  </div>
                             </div>
                           </div>
 
                           <div class="container text-center">
                             <div class="row" style="width: 100%">
 
-                                @for ($i=1; $i<=5; $i++)
-                                <div class="col" style="min-width:352px">
-                                    <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                        XXX
+                                @foreach ($our->where('team_id', 2)->skip(2) as $our2 )
+                                <div class="col">
+                                    <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our2->img))
+                                    {{ '/storage/' . $our2->img }}
+                                    @endif" alt="">
+                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                        @if (isset($our2->nama))
+                                            {!! $our2->nama !!}
+                                        @endif
                                     </div>
                                     <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                        Member of Creative Design
+                                        @if (isset($our2->role))
+                                        {!! $our2->role !!}
+                                        @endif
                                     </div>
-                                </div>
-                                @endfor
+                                  </div>
+
+                                @endforeach
                             </div>
                           </div>
                 </div>
@@ -233,7 +308,7 @@
 
 <section id = "Public-Relation">
     <div style="background-image: url('/Assets/20220826_010711_0004.png'); background-size: cover; background-position:center;">
-        <div class="section-header" style="margin-bottom: 0%;">
+        <div class="section-header" style="margin-bottom: 0%; padding-bottom: 50px;">
             <div class="page-padding" style = "
             width: 100%;
             max-width: 77rem;
@@ -244,41 +319,62 @@
                         <h2 style="color: white; text-align:center; font-size:46px">Public Relation Dapartment</h2>
                         <div class="container text-center">
                             <div class="row" style="width: 100%">
-                              <div class="col">
-                                <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                    XXX
-                                </div>
-                                <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                    Head of Public Relation
-                                </div>
-                              </div>
-                              <div class="col">
-                                <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                    XXX
-                                </div>
-                                <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                    Vice Head of Public Relation
-                                </div>
-                              </div>
+                                <div class="col">
+                                    <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->where('team_id', 3)->skip(0)->first()->img))
+                                    {{ '/storage/' . $our->where('team_id', 3)->skip(0)->first()->img }}
+                                    @endif" alt="">
+                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                        @if (isset($our->where('team_id', 3)->skip(0)->first()->nama))
+                                            {!! $our->where('team_id', 3)->skip(0)->first()->nama !!}
+                                        @endif
+                                    </div>
+                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                        @if (isset($our->where('team_id', 3)->skip(0)->first()->role))
+                                        {!! $our->where('team_id', 3)->skip(0)->first()->role !!}
+                                        @endif
+                                    </div>
+                                  </div>
+
+                                  <div class="col">
+                                    <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our->where('team_id', 3)->skip(1)->first()->img))
+                                    {{ '/storage/' . $our->where('team_id', 3)->skip(1)->first()->img }}
+                                    @endif" alt="">
+                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                        @if (isset($our->where('team_id', 3)->skip(1)->first()->nama))
+                                            {!! $our->where('team_id', 3)->skip(1)->first()->nama !!}
+                                        @endif
+                                    </div>
+                                    <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
+                                        @if (isset($our->where('team_id', 3)->skip(1)->first()->role))
+                                        {!! $our->where('team_id', 3)->skip(1)->first()->role !!}
+                                        @endif
+                                    </div>
+                                  </div>
                             </div>
+                        </div>
                           </div>
 
                           <div class="container text-center">
                             <div class="row" style="width: 100%">
 
-                                @for ($i=1; $i<=5; $i++)
-                                <div class="col" style="min-width:352px">
-                                    <img class="img-fluid" style="height: 352px; width:auto;" src="/Assets/Copy of vector-7.png" alt="">
-                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -7%;">
-                                        XXX
+                                @foreach ($our->where('team_id', 3)->skip(2) as $our3 )
+                                <div class="col">
+                                    <img class="img-fluid" style="height: 352px; width:auto;" src="@if (isset($our3->img))
+                                    {{ '/storage/' . $our3->img }}
+                                    @endif" alt="">
+                                    <div style="font-size: 22px; text-align: center; font-family: 'MontserratSemiBold'; font-weight: 900; margin-top: -5%;">
+                                        @if (isset($our3->nama))
+                                            {!! $our3->nama !!}
+                                        @endif
                                     </div>
                                     <div style="font-size: 22px;font-style: italic;font-family: 'MontserratRegular';font-weight: 100;">
-                                        Member of Public Relation
+                                        @if (isset($our3->role))
+                                        {!! $our3->role !!}
+                                        @endif
                                     </div>
-                                </div>
-                                @endfor
+                                  </div>
+
+                                @endforeach
                             </div>
                           </div>
                 </div>

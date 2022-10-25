@@ -12,6 +12,15 @@
 
     <!-- Custom styles for this template -->
     <link href="/Css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Css/trix.css">
+  <script type="text/javascript" src="/Js/trix.js"></script>
+
+<style>
+    trix-toolbar [data-trix-button-group="file-tools"]{
+        display:none;
+    }
+</style>
+
   </head>
   <body>
 

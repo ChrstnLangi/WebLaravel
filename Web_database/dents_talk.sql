@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 10, 2022 at 01:17 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- Generation Time: Oct 02, 2022 at 05:02 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -226,7 +226,7 @@ CREATE TABLE `failed_jobs` (
 
 CREATE TABLE `gambars` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `img` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `img` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `background` tinyint(1) NOT NULL,
   `page_id` bigint(20) UNSIGNED NOT NULL,
   `published_at` timestamp NULL DEFAULT NULL,
@@ -239,10 +239,10 @@ CREATE TABLE `gambars` (
 --
 
 INSERT INTO `gambars` (`id`, `img`, `background`, `page_id`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, '/Assets/20220728_193425_0000.png', 1, 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(2, '/Assets/website-poster hands onbaru (1).png', 0, 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(3, '/Assets/20220728_193433_0001.png', 1, 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(4, '/Assets/website-poster hands onbaru (1).png', 0, 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(1, 'image/AKyolIhHXFHvAOUizwW5a1M5WsW10dVZtsyneCf1.png', 1, 1, NULL, '2022-08-02 11:45:50', '2022-09-30 13:17:05'),
+(2, 'image/g93oB2vYHvzW7E781dDt2bGnOuiaGFl90Wpmcibj.png', 0, 1, NULL, '2022-08-02 11:45:50', '2022-09-30 13:21:15'),
+(3, 'image/wl1oSfBjDZBQxNVySNGiSZYXpMyJfLAdc4NQfZee.png', 1, 1, NULL, '2022-08-02 11:45:50', '2022-09-30 13:21:15'),
+(4, 'image/WJGEEKiJlB4LQLULkePnHWVmqMNjt483PJUQBToc.png', 0, 1, NULL, '2022-08-02 11:45:50', '2022-09-30 13:21:15'),
 (5, '/Assets/20220728_194108_0000.png', 1, 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
 (6, '/Assets/website-market-1.png', 0, 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
 (7, '/Assets/20220728_193433_0001.png', 1, 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
@@ -416,6 +416,72 @@ INSERT INTO `options` (`id`, `judul`, `desk`, `img`, `note`, `published_at`, `cr
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `our_speakers`
+--
+
+CREATE TABLE `our_speakers` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nama` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `text` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `img` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `speaker_id` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `our_speakers`
+--
+
+INSERT INTO `our_speakers` (`id`, `nama`, `text`, `img`, `speaker_id`, `created_at`, `updated_at`) VALUES
+(4, 'new_test', '<div>newasa<br><strong><em>dwafawf<br></em></strong>dawdawd</div>', 'image/7utcO1gkigkbxSeZRa9U8kSNuNatof3Rhxdob7EL.png', 1, '2022-09-30 16:21:27', '2022-09-30 18:46:56'),
+(5, '231', '<div><strong>testing<br></strong><em>fafwafawa</em><strong><br></strong><strong><em>fawfawfwa</em></strong></div>', 'image/FieVf2iPdK8jUhTEY1QAR8M9AGPGvKAHhixYyOr1.png', 1, '2022-09-30 16:27:31', '2022-09-30 16:34:57'),
+(6, 'alpha', '<div>Alpha<br><strong>Beta</strong><br><em>Charlie</em></div>', 'image/7efSgQh8IfZa8RC0SQ72dPLrCdhLz4EiUfQZMTM9.png', 2, '2022-09-30 16:35:39', '2022-09-30 16:35:51'),
+(7, 'Beta', '<div>123<br><em>345</em><br><strong>567</strong></div>', 'image/b1ItwMh51F0RF9geMHINvYPkFzKjp8LmbGuD1ci9.png', 2, '2022-09-30 16:36:19', '2022-09-30 16:36:19'),
+(8, 'One', '<div><em>One<br></em>Two<br><strong>Three</strong></div>', 'image/ak91sTRfZGnWwKSTiMZb4XQcqYwBcEt99oxBQcmj.png', 3, '2022-09-30 16:36:57', '2022-09-30 16:36:57'),
+(9, 'Two', '<div><em>One</em><br><strong>Two</strong><br><em>Four</em></div>', 'image/Gl7C4frRH3hmzqYMlfgHGZSuMRGRMilodt3Wkfax.png', 3, '2022-09-30 16:38:53', '2022-09-30 16:38:53');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `our_teams`
+--
+
+CREATE TABLE `our_teams` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nama` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `role` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `img` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `team_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `our_teams`
+--
+
+INSERT INTO `our_teams` (`id`, `nama`, `role`, `img`, `team_id`, `created_at`, `updated_at`) VALUES
+(1, 'Nathan', 'Chief Marketing Officer', 'image/nfLuh8EzOeplh6cdgkZP53t6Bp4LpeklgXOKavcl.png', 0, NULL, '2022-09-30 17:14:41'),
+(2, 'David Octavian', 'Chief Excecutive Officer', 'image/2D77buKOz8nHC3b9vNRD85KLwm5SLsKkVJ9SZVg8.png', 0, NULL, '2022-09-30 16:47:29'),
+(3, 'Grace Maria', 'Chief Operation Officer', 'image/3DwINtQkTwpJAW1TuC9X9FayeNyoNboFaGu4mZJY.png', 0, NULL, '2022-09-30 16:47:46'),
+(4, 'Devani', 'Strategic Advisor', 'image/Ohx3s1qcTsjKWoXsTDSSQ1Oy775FqdPwA7Q5D0Iz.png', 0, NULL, '2022-09-30 16:47:59'),
+(5, 'Devani', 'Secretary', 'image/jrAgT2NfiOHQr9Z8jR9DXgG3UZMxtuuHvaD15gYN.png', 0, NULL, '2022-09-30 16:56:32'),
+(6, 'XXX', 'Secretary Assistant', 'image/yrPnNbVlbRtapEvnHY2ac49tqiMwY5Vjpj0KfHJA.png', 0, NULL, '2022-09-30 16:48:09'),
+(7, 'XXX', 'Head of Creative Content', 'image/D5EbiWZHS62lOkpYZ75bDKNmGo4THId05uCkWPcA.png', 1, NULL, '2022-09-30 16:48:26'),
+(8, 'XXX', 'Vice Head of Creative Content', 'image/nA28B56Mj6Kd9ZVvpstbuQzHBSxZsbzkdgxpZGi7.png', 1, NULL, '2022-09-30 16:48:39'),
+(9, 'XXX', 'Head of Creative Design', 'image/Y9qdCcUpGWJ9bggl1RxRiPwHeLdhZelDvcmubgpJ.png', 2, NULL, '2022-09-30 16:48:48'),
+(10, 'XXX', 'Vice Head of Creative Design', 'image/qbDuE7kAD6Wfk5HclEXQzL30jpKhiRDgwoVtcSsI.png', 2, NULL, '2022-09-30 16:48:57'),
+(11, 'XXX', 'Head of Public Relation', 'image/ckg0uHyRlGoDaWxD5z4v8noa62bD7kcl77gEkWjK.png', 3, NULL, '2022-09-30 16:49:04'),
+(12, 'XXX', 'Vice Head of Public Relation', 'image/h3KHMEFL7r8Cm8j2wMAPHmPdRpkxlZAkbW1r3a36.png', 3, NULL, '2022-09-30 16:49:14'),
+(13, 'sfafdwad', 'member2', 'image/jKRVdk4NtK1wDsnIGUYpZcR2onGGDZy9nKhhJJPN.png', 1, '2022-09-30 15:16:44', '2022-09-30 17:06:16'),
+(14, 'New', 'member1', 'image/BodOk22JWwmHXDXVe6NrTn7IPMHw3MqvYuW3Kt8v.png', 2, '2022-09-30 17:21:45', '2022-09-30 17:21:45'),
+(15, 'test', 'member3', 'image/4At0XiM6Lxs92J0K57uNtyF1WEawV1WLL6pCRQAb.png', 3, '2022-09-30 17:22:00', '2022-09-30 17:22:00'),
+(16, 'newtest', 'member', 'image/zjs4kC9wEyHEaS4EFLvLWmT7XkyIvzuFiTLs2ftN.png', 2, '2022-09-30 18:50:34', '2022-09-30 18:50:34');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `pages`
 --
 
@@ -439,8 +505,8 @@ INSERT INTO `pages` (`id`, `judul`, `slug`, `web_id`, `published_at`, `created_a
 (3, 'DentsPractice', 'dentspractice', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
 (4, 'Internship Program', 'internship-program', 4, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
 (5, 'Company Profile', 'company-profile', 4, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(6, 'Company Staff', 'company-staff', 4, NULL, NULL, NULL),
-(7, 'Our Speaker', 'our-speaker', 4, NULL, NULL, NULL);
+(6, 'Our Speaker', 'our-speaker', 4, NULL, NULL, NULL),
+(7, 'Our Team', 'our-team', 4, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -477,9 +543,9 @@ CREATE TABLE `programs` (
 --
 
 INSERT INTO `programs` (`id`, `judul`, `desk`, `img`, `link`, `mini_link`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'DentsLearn Hands On', 'Merupakan suatu program yang dapat meningkatkan skill keterampilan dokter gigi dalam melakukan tindakan praktik dengan pemberian materi serta praktik langsung yang dibimbing oleh pemateri yang memiliki kompetensi.', 'Assets/Copy of vector-8.png', 'program_1', 'mini_program_1', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(2, 'DentsLearn Webinar', 'Merupakan seminar mengenai topik kedokteran gigi yang mendatangkan pemateri berkompeten di bidangnya serta bekerja sama dengan PDGI maupun organisasi terkait.', 'Assets/Copy of vector-7.png', 'program_2', 'mini_program_2', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(3, 'DentsPractice', '<div\r\nstyle = \"\r\ntext-align: center;\r\npadding-top: 35%;\r\nfont-size: 38.7128px;\r\ntext-transform: uppercase;\r\ncolor: white;\r\nline-height: 45px;\r\n\">\r\nComing soon\r\n</div>', 'Assets/Copy of vector-2.png', 'program_3', 'mini_program_3', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
+(1, 'DentsLearn Hands On', 'Merupakan suatu program yang dapat meningkatkan skill keterampilan dokter gigi dalam melakukan tindakan praktik dengan pemberian materi serta praktik langsung yang dibimbing oleh pemateri yang memiliki kompetensi.', 'Assets/Copy of vector-8.png', 'Program/dentslearn-handson', 'mini_program_1', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(2, 'DentsLearn Webinar', 'Merupakan seminar mengenai topik kedokteran gigi yang mendatangkan pemateri berkompeten di bidangnya serta bekerja sama dengan PDGI maupun organisasi terkait.', 'Assets/Copy of vector-7.png', 'Program/dentslearn-webinar', 'mini_program_2', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(3, 'DentsPractice', '<div\r\nstyle = \"\r\ntext-align: center;\r\npadding: 20% 0;\r\nfont-size: 38.7128px;\r\ntext-transform: uppercase;\r\ncolor: white;\r\nline-height: 45px;\r\n\">\r\nComing soon\r\n</div>', 'Assets/Copy of vector-2.png', 'Program/dentspractice', 'mini_program_3', NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
 
 -- --------------------------------------------------------
 
@@ -516,6 +582,46 @@ INSERT INTO `reviews` (`id`, `judul`, `desk`, `img`, `role`, `link`, `published_
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `speakers`
+--
+
+CREATE TABLE `speakers` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `nama` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `speakers`
+--
+
+INSERT INTO `speakers` (`id`, `nama`) VALUES
+(1, 'Creative Content Dapartment'),
+(2, 'Nucleus'),
+(3, 'DentsArmy Upgrading Class');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teams`
+--
+
+CREATE TABLE `teams` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nama` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `teams`
+--
+
+INSERT INTO `teams` (`id`, `nama`) VALUES
+(1, 'Creative Content Dapartment'),
+(2, 'Creative Design Dapartment'),
+(3, 'Public Relation Dapartment');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `texts`
 --
 
@@ -523,6 +629,7 @@ CREATE TABLE `texts` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `text` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `page_id` bigint(20) UNSIGNED NOT NULL,
+  `gambar_id` bigint(20) UNSIGNED DEFAULT NULL,
   `published_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -532,25 +639,45 @@ CREATE TABLE `texts` (
 -- Dumping data for table `texts`
 --
 
-INSERT INTO `texts` (`id`, `text`, `page_id`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 'DentsLearn:', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(2, 'Hands On', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(3, 'Dapatkan ilmu-ilmu baru seputar kedokteran gigi dan kembangkan skill kedokteran gigimu di DentsLearn: Hands On! <br><br>Hands On juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(4, 'Lihat Hands On Bulan Ini!', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(5, 'Hands On yang Akan Datang', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(6, '<div style=\"font-weight: 400;\">DentsLearn: HandsOn 17</div><div= style=\"font-weight: 700; font-style: italic;\">Operculectomy Using Conventional Technic</div>', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(7, 'DentsLearn: Hands On Sebelumnya', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(8, '<div style=\"font-weight: 400;\">DentsLearn: HandsOn 13</div><div= style=\"font-weight: 700; font-style: italic;\">Simple Dental Wire</div>', 1, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(9, 'DentsLearn:', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(10, 'Webinar', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(11, 'Ketahui sudut pandang dari narasumber yang berkompeten dalam menunjang karir dan pendidikan di kedokteran gigi.<br><br>Webinar juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(12, 'Lihat Webinar Bulan Ini!', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(13, 'Webinar yang Akan Datang', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(14, '<div style=\"font-weight: 400;\">DentsLearn: Webinar 17</div><div= style=\"font-weight: 700; font-style: italic;\">Operculectomy: When We Need That Procedure?</div>', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(15, 'DentsLearn: Webinar Sebelumnya', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(16, '\r\n\r\n<div style=\"font-weight: 400;\">DentsLearn: Webinar 13</div><div= style=\"font-weight: 700; font-style: italic;\">Penatalaksanaan Trauma Dentoalveolar pada prakter sehari hari</div>', 2, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(17, 'DentsPractice', 3, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
-(18, 'COMING SOON!', 3, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50');
+INSERT INTO `texts` (`id`, `text`, `page_id`, `gambar_id`, `published_at`, `created_at`, `updated_at`) VALUES
+(1, '<div>DentsLearn:</div>', 1, 0, NULL, '2022-08-02 11:45:50', '2022-09-30 18:51:51'),
+(2, '<div>Hands On</div>', 1, 0, NULL, '2022-08-02 11:45:50', '2022-09-30 18:51:51'),
+(3, '<div>Dapatkan ilmu-ilmu baru seputar kedokteran gigi dan kembangkan skill kedokteran gigimu di DentsLearn: Hands On!&nbsp;<br>Hands On juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.</div>', 1, 0, NULL, '2022-08-02 11:45:50', '2022-09-30 18:51:51'),
+(4, '<div>Lihat Hands On Bulan Ini!</div>', 1, 0, NULL, '2022-08-02 11:45:50', '2022-09-30 18:51:51'),
+(5, '<div>Webinar Bulan Ini</div>', 1, 0, NULL, '2022-08-02 11:45:50', '2022-09-30 18:51:51'),
+(6, '<div>DentsLearn: HandsOn 17<br><strong><em>Operculectomy Using Conventional Technic</em></strong></div>', 1, 0, NULL, '2022-08-02 11:45:50', '2022-09-30 18:51:51'),
+(7, '<div>DentsLearn: Hands On Sebelumnya</div>', 1, 0, NULL, '2022-08-02 11:45:50', '2022-09-30 18:51:51'),
+(8, '<div>DentsLearn: HandsOn 13<br><strong><em>Simple Dental Wire</em></strong></div>', 1, 0, NULL, '2022-08-02 11:45:50', '2022-09-30 18:51:51'),
+(9, 'DentsLearn:', 2, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(10, 'Webinar', 2, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(11, 'Ketahui sudut pandang dari narasumber yang berkompeten dalam menunjang karir dan pendidikan di kedokteran gigi.<br>Webinar juga sudah terverifikasi PDGI! Jadi, kamu akan dapat poin SKP juga.', 2, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(12, 'Webinar Bulan Ini', 2, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(13, 'Lihat Hands On Bulan Ini!', 2, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(14, 'DentsLearn: Webinar 17<br>Operculectomy: When We Need That Procedure?', 2, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(15, 'DentsLearn: Webinar Sebelumnya', 2, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(16, 'DentsLearn: Webinar 13<br>Penatalaksanaan Trauma Dentoalveolar pada prakter sehari hari', 2, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(17, 'DentsPractice', 3, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(18, 'COMING SOON!', 3, 0, NULL, '2022-08-02 11:45:50', '2022-08-02 11:45:50'),
+(19, 'Kembangkan Minat dan Kreativitas Kamu bersama DENTS.TALK Internship Program <br>“DentsArmy”!', 4, 0, NULL, NULL, NULL),
+(20, 'Gabung Sekarang!', 4, 0, NULL, NULL, NULL),
+(21, 'Salurkan Ketertarikanmu', 4, 0, NULL, NULL, NULL),
+(22, 'Halo teman-teman mahasiswa kedokteran gigi maupun non kedokteran gigi yang ingin mengembangkan minat dan kreativitas kalian, yuk bergabung bersama DENTS.TALK melalui program internship kami yaitu “DentsArmy”. Disini kamu bisa memilih departemen yang sesuai dengan keminatan kamu loh! Yuk disimak departemen apa saja yang bisa kamu pilih.', 4, 0, NULL, NULL, NULL),
+(23, 'Dengar Apa Yang Mereka Katakan Saat Menjadi DentsArmy', 4, 0, NULL, NULL, NULL),
+(24, 'Magang Dimanapun Kamu Berada Secara Online!', 4, 0, NULL, NULL, NULL),
+(25, 'Explore Yourself at DENTS.TALK!', 4, 0, NULL, NULL, NULL),
+(26, 'Apa Saja Dapartemen Yang Dapat Kamu Pilih', 4, 0, NULL, NULL, NULL),
+(27, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.', 4, 12, NULL, NULL, NULL),
+(28, 'Lorem ipsum', 4, 12, NULL, NULL, NULL),
+(29, 'Dolor sit', 4, 12, NULL, NULL, NULL),
+(30, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.', 4, 13, NULL, NULL, NULL),
+(31, 'Dolor sit', 4, 13, NULL, NULL, NULL),
+(32, 'Lorem ipsum', 4, 13, NULL, NULL, NULL),
+(33, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam laboriosam vero at reiciendis labore cupiditate quos beatae voluptatem, quae, fugit autem sit eveniet, et placeat a unde obcaecati ipsum ex.', 4, 14, NULL, NULL, NULL),
+(34, 'Amet consectetur', 4, 14, NULL, NULL, NULL),
+(35, 'Dolor sit', 4, 14, NULL, NULL, NULL),
+(36, 'Lorem ipsum.', 4, 19, NULL, NULL, NULL),
+(37, 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 4, 19, NULL, NULL, NULL),
+(38, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo voluptates minima repellat nostrum odit suscipit quibusdam consectetur temporibus. Illum sunt delectus vitae quis, earum laborum placeat nobis vel corporis.', 4, 19, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -701,6 +828,18 @@ ALTER TABLE `options`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `our_speakers`
+--
+ALTER TABLE `our_speakers`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `our_teams`
+--
+ALTER TABLE `our_teams`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `pages`
 --
 ALTER TABLE `pages`
@@ -722,6 +861,18 @@ ALTER TABLE `programs`
 -- Indexes for table `reviews`
 --
 ALTER TABLE `reviews`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `speakers`
+--
+ALTER TABLE `speakers`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `teams`
+--
+ALTER TABLE `teams`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -838,6 +989,18 @@ ALTER TABLE `options`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `our_speakers`
+--
+ALTER TABLE `our_speakers`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `our_teams`
+--
+ALTER TABLE `our_teams`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
@@ -856,10 +1019,22 @@ ALTER TABLE `reviews`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
+-- AUTO_INCREMENT for table `speakers`
+--
+ALTER TABLE `speakers`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `teams`
+--
+ALTER TABLE `teams`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `texts`
 --
 ALTER TABLE `texts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `users`

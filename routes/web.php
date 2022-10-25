@@ -5,12 +5,17 @@ use App\Models\Page;
 use App\Models\About;
 use App\Models\Posts;
 use App\Models\Article;
+use App\Models\OurTeam;
 use App\Models\Program;
 use App\Models\Category;
 use App\Http\Controllers\internship;
 use App\Http\Controllers\Postcontrol;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Logincontrol;
+use App\Http\Controllers\DashboardTeam;
+
+use App\Http\Controllers\DashboardAbout;
+use App\Http\Controllers\DashboardGambar;
 use App\Http\Controllers\Registercontrol;
 use App\Http\Controllers\Dashboardhomesection_1;
 
@@ -32,7 +37,8 @@ Route::get('/dashboard', function(){
         'title' => 'Dashboard',
         "programs" => Program::content(),
         "about" => About::content(),
-        "articles" => Article::content()
+        "articles" => Article::content(),
+        "Webs" => Web::content()
     ]);
 })->middleware('auth');
 
@@ -42,9 +48,16 @@ Route::get('/About/company-profile', function(About $About){
     ]);
 });
 
-Route::get('/About/company-staff', function(About $About){
+Route::get('/About/our-team', function(About $About){
     return view('about.staff', [
-        'title' => "Company Staff"
+        'title' => "Our Team",
+        'our' => OurTeam::all()
+    ]);
+});
+Route::get('/About/our-speaker', function(About $About){
+    return view('about.speaker', [
+        'title' => "Our Speaker",
+        'our' => OurSpeaker::all()
     ]);
 });
 
@@ -56,13 +69,10 @@ Route::get('/sign-in', function(){
 
 Route::get('/About/{About:slug}', function(About $About){
     return view('about.internship', [
-        'title' => $About -> nama,
-        'judul' => $About -> Aboutjudul->load('About'),
-        'slug' => $About -> slug
+        'title' => $page -> judul,
+        'page' =>$page
     ]);
 });
-
-
 
 Route::get('/Program/{page:slug}', function(Page $page){
     return view('program.index', [

@@ -19,8 +19,5 @@ class Web extends Model
         return $this->hasMany(Page::class);
     }
 
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
+
 }

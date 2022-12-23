@@ -376,7 +376,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    }
 
    h3 {
-    font-family: Adieu;
+
      margin-top: 0rem;
      margin-bottom: 0rem;
      color: #000;
@@ -611,7 +611,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
      text-align: center;
      letter-spacing: 1px;
      text-decoration: none;
-     text-transform: uppercase;
+     text-transform: capitalize;
    }
 
    .button_program {
@@ -630,7 +630,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
     color: #000;
-    font-size: 0.813rem;
+    font-size: rfs-fluid-value(20.224px);
     font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
@@ -2045,6 +2045,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    }
 
    .nav_container {
+    font-family: 'MontserratSemiBold';
      display: -webkit-box;
      display: -webkit-flex;
      display: -ms-flexbox;
@@ -2641,6 +2642,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    }
 
    .why-join_card-heading {
+    font-weight: 700;
      margin-top: 1.625rem;
      margin-bottom: 0.7rem;
      line-height: 1.8rem;
@@ -2842,10 +2844,10 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    .our-programs_heading {
     font-family: MontserratSemiBold;
     color: #000;
-    padding-left: 70px;
+
     max-width: 75%;
     font-size: 25.5131px;
-    line-height: 1.3rem;
+    line-height: 25px;
     font-weight: 900;
     letter-spacing: 0.05em;
     text-transform: capitalize;
@@ -3250,6 +3252,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    }
 
    .testimonial1_name {
+    font-family: poppins;
      margin-bottom: 1px;
      color: #000;
      font-size: 1.125rem;
@@ -3651,7 +3654,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    }
 
    .footer_bottom-right-column {
-     margin-right: 62px;
+    margin-right: -110px;
    }
 
    .foote_logo {
@@ -3694,7 +3697,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    }
 
    .footer_social-link-block {
-     margin-left: -3.5rem;
+     margin-left: -43px;
    }
 
    .footer_logo-instagram {
@@ -3770,6 +3773,8 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    }
 
    .homepage_header-text {
+    font-family: poppins;
+    font-weight: 300;
      color: #000;
      font-size: 1rem;
      line-height: 1.8rem;
@@ -17690,6 +17695,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     max-width: 713px;
     font-family: 'poppins';
     font-size: 18.2333px;
+    margin: 0 19px;
     line-height: 1.7;
     font-weight: 400;
    }
@@ -26876,11 +26882,11 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
      .section-header {
          padding-bottom: 250px;
      }
-     
+
      .section-header-2 {
          padding-bottom: 390px;
      }
-     
+
      h2 {
        font-size: 32.113px;
        line-height: 3.308rem;
@@ -26892,7 +26898,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
      .button.is-hero-button {
       font-family: poppins;
-       padding: 1.563rem 4rem;
+       padding: 1rem 4rem;
      }
 
      .button.is-our-programs {
@@ -28333,7 +28339,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
      }
 
      .footer_bottom-right-column {
-       margin-right: 0px;
+        margin-right: -110px;
      }
 
      .foote_logo {

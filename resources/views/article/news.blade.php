@@ -1,40 +1,28 @@
-<div style="background-color: #83d2d9;">
-    <div class="row" style="padding-bottom: 5%;">
-        <div class="col-3" style="background-color: #f6f3f6; border-radius: 10px; margin-left:8%;">
-            <h2 style="margin: 10% 3% 5% 10%;">Kategori</h2>
-            @for ($i = 0; $i < 10; $i++)
-                <div class="form-check" style="margin-left:10%;">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    <h2 style="font-size: 125%;">Periodonsia</h2>
-                    </label>
-                </div>
-            @endfor
-            <h2 style="margin: 1% 3% 5% 10%;">Bahasa</h2>
-                <div class="form-check" style="margin-left:10%;">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    <h2 style="font-size: 125%;">Indonesia</h2>
-                    </label>
-                </div>
-                <div class="form-check" style="margin-left:10%;">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    <h2 style="font-size: 125%;">Inggris</h2>
-                    </label>
-                </div>
+@extends('layouts.main')
+
+@section('contain')
+<header>
+    <div class="heading" style="background-color: white;padding-bottom: 10%"></div>
+    <div class="homepage_header_heading" style="font-family: MontserratRegular; float: right; margin: -1.7% 5% 1% 0%; font-size: 90%;">28 April, 2022</div>
+    <h2 style="margin-left: 5%; border-block-end: 5px; border-block-end:solid; margin-right:5%; color: #719bd7; border-block-end-color: black; padding-bottom: 1%;">DentsArticle</h2>
+    <div class="homepage_header_heading" style="font-family: MontserratRegular; float: right; margin: -4.5% -8% 1% 0%; font-size: 90%;">123 Anywhere St., Any City</div>
+    <div style="margin-left: 10%;margin-right: 10%;">
+        <img class="img-fluid" src="/Assets/{{ $article['image'] }}" alt="">
+        <div style="background-color: #6d9ed8; padding: 1% 2% 2% 0%; margin-left: 75%; z-index: 999; margin-top: -5%; position: relative; margin-right: -3%;">
+            <div class="homepage_header_heading" style="font-family: MontserratRegular; text-align: right; line-height: 140%; font-size: 120%;">
+                Journal
+                By {{ $article["author"] }},
+                {{ $article["date"] }}
             </div>
-        <div class="col-7" style="background-color: #f6f3f6; border-radius: 10px; margin-left: 2%;">
-            @for ($i = 0; $i < 3; $i++)
-            <div style="border-style: solid; border-width: 3px; border-radius: 15px; margin: 1%;">
-                <div class="homepage_header-text" style="text-indent: 10%; font-weight: 600; font-size: 110%; padding: 2% 1% 2% 1%; text-align: justify;">
-                    ipsum dolor sit, amet consectetur adipisicing elit. Tempora in quod, ipsa ducimus veniam molestias quos ut repudiandae nobis sunt consequatur mollitia quisquam dicta alias provident consequuntur, temporibus fugiat est officiis vero quae excepturi qui nesciunt beatae? Impedit illum maiores facilis, numquam non aspernatur corporis! Sit debitis distinctio voluptatem soluta?
-                </div>
-                <div class="homepage_header-text" style="font-weight: 600; font-size: 130%; margin-top: -2%; text-align: right; color: #769ed7;">
-                    July 2022 - Leadericko Wisnu
-                </div>
-            </div>
-            @endfor
         </div>
     </div>
+</header>
+<div class="heading">
+    <h2 style="margin: 1% 10% 0% 10%; font-size: 100%;">{{ $article["title"] }}.</h2>
 </div>
+<div class="homepage_header-text" style="margin: 2% 10% 5% 10%; text-indent: 5%; text-align: justify; font-weight: 400;">
+    {{ $article["body"] }}
+</div>
+
+
+@endsection

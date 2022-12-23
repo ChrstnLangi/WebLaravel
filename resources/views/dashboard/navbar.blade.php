@@ -9,25 +9,33 @@
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Home
+              Create
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/dashboard/home/section_1">Section 1</a></li>
-              <li><a class="dropdown-item" href="/dashboard/home/section_2">Section 2</a></li>
-              <li><a class="dropdown-item" href="/dashboard/home/section_3">Section 3</a></li>
-              <li><a class="dropdown-item" href="/dashboard/home/section_4">Section 4</a></li>
-              <li><a class="dropdown-item" href="/dashboard/home/section_5">Section 5</a></li>
-              <li><a class="dropdown-item" href="/dashboard/home/section_6">Section 6</a></li>
+              <li><a class="dropdown-item" href="/dashboard/ourSpeaker/create">Our Speaker</a></li>
+              <li><a class="dropdown-item" href="/dashboard/ourTeam/create">Our Team</a></li>
+              <li><a class="dropdown-item" href="/dashboard/category/create">Category</a></li>
+              <li><a class="dropdown-item" href="/dashboard/article/create">Article</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About
+              Edit
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/dashboard/about">Internship Program</a></li>
-              <li><a class="dropdown-item" href="/dashboard/about/company-profile }}">Company Profile</a></li>
+              <li><a class="dropdown-item" href="/dashboard/page/">Text</a></li>
+              <li><a class="dropdown-item" href="/dashboard/gambar/">Gambar</a></li>
+              <li><a class="dropdown-item" href="/dashboard/reviewer/">Review</a></li>
+              <li><a class="dropdown-item" href="/dashboard/ourSpeaker/">Our Speaker</a></li>
+              <li><a class="dropdown-item" href="/dashboard/ourTeam/">Our Team</a></li>
+              <li><a class="dropdown-item" href="/dashboard/category/">Category</a></li>
+              <li><a class="dropdown-item" href="/dashboard/article/">Article</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: black" aria-current="page" href="/pendaftaran/">
+              Pendaftaran
+            </a>
           </li>
       </ul>
     </div>

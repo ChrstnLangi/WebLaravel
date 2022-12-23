@@ -10,6 +10,7 @@ use App\Models\Reviewer;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Page extends Model
 {
@@ -42,6 +43,10 @@ class Page extends Model
     public function Web()
     {
         return $this->belongsTo(Web::class);
+    }
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 
     public function Pendaftaran(){

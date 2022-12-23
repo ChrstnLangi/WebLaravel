@@ -48,7 +48,7 @@ class internship extends Controller
      */
     public function show(About $about)
     {
-        return view('dashboard.about.show', [
+        return view('/dashboard.about.show', [
             'about' => $about
         ]);
     }

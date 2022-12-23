@@ -1,25 +1,26 @@
 <?php
 
-namespace Database\Seeders;
+namespace Database\Seeders\new_project\database\seeders;
 
+use App\Models\Web;
 use App\Models\Help;
 use App\Models\Join;
+use App\Models\Page;
+use App\Models\Text;
 use App\Models\User;
 use App\Models\About;
 use App\Models\Hired;
+use App\Models\Gambar;
 use App\Models\Option;
 use App\Models\Review;
 use App\Models\Article;
 use App\Models\Program;
+use App\Models\Category;
 use App\Models\Homepage;
 use App\Models\Aboutdesk;
 use App\Models\Aboutjudul;
 use App\Models\Aboutgambar;
 use App\Models\Aboutreview;
-use App\Models\Gambar;
-use App\Models\Page;
-use App\Models\Text;
-use App\Models\Web;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -179,13 +180,6 @@ class DatabaseSeeder extends Seeder
             'desk' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus facilis corrupti voluptate necessitatibus dicta eum esse nemo laudantium sit quae fuga est, alias aliquam numquam quia ullam neque tempore!.',
             'img' => 'Assets/dummy_3.png',
             'note' => ' '
-        ]);
-
-        Article::create([
-            'judul'=> ' ',
-            'desk'=> ' ',
-            'img1'=> ' ',
-            'img2'=> ' '
         ]);
 
         Homepage::create([
@@ -532,6 +526,51 @@ class DatabaseSeeder extends Seeder
             'email'=>'Admin@gmail.com',
             'role'=>'Admin',
             'password'=>bcrypt('12345')
+        ]);
+
+        Article::create([
+            'title' => 'First Article that has the first position cause its a first article',
+            'category_id' => 1,
+            'image' => '20220728_193418_0000.png',
+            'author' => 'Wisnu',
+            'date' => 'September 2022',
+            'slug' => 'first-article',
+            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatem repellat vitae expedita ipsam vel veritatis sapiente odit quis unde cumque temporibus, dolor blanditiis corrupti dolorem ad aperiam id iure hic esse accusamus optio reprehenderit. Ipsam dicta eaque aspernatur eos fuga nihil, quam officia deserunt, animi sequi, ad vel ea!'
+        ]);
+
+        Article::create([
+            "title" => "Second Article that has the second position cause its a second article",
+            'category_id' => 2,
+            "image" => "20220728_193418_0000.png",
+            "author" => "Still Wisnu",
+            "date" => "August 2022",
+            "slug" => "second-article",
+            "body" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nihil corrupti officiis perferendis repellendus ea dolores. Excepturi numquam aperiam similique ad quis deleniti vel autem ratione accusantium, inventore architecto ab."
+        ]);
+
+        Article::create([
+            "title" => "Third Article that has the third position cause its a third article",
+            'category_id' => 3,
+            "image" => "20220728_193418_0000.png",
+            "author" => "Wisnu Again",
+            "date" => "October 2022",
+            "slug" => "third-article",
+            "body" => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi neque fugit molestiae sunt quibusdam odio dolor at vel qui eos suscipit architecto, consectetur distinctio! Esse mollitia minus dolor dolores, sint doloremque necessitatibus maiores vero fugit. Obcaecati laudantium sit alias magni expedita sed quidem a aut at, temporibus adipisci velit magnam architecto illum laborum neque ducimus, odit maiores accusamus recusandae harum?"
+        ]);
+
+        Category::create([
+            'name' => 'Pengetahuan Umum',
+            'slug' => 'pengetahuan-umum',
+        ]);
+
+        Category::create([
+            'name' => 'Design',
+            'slug' => 'design',
+        ]);
+
+        Category::create([
+            'name' => 'Gigi',
+            'slug' => 'gigi',
         ]);
     }
 }

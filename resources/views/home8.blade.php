@@ -5,11 +5,16 @@
           <div class="cta_component">
             <div class="margin-bottom margin-large">
               <div class="text-align-center">
-                <h2 data-w-id="f83eafeb-31ea-0356-b84d-476b68649693" style="opacity:0" class="cta_heading">ADA YANG INGIN DISAMPAIKAN BERKAITAN DENGAN PERTANYAAN?</h2>
+                <h2 data-w-id="f83eafeb-31ea-0356-b84d-476b68649693" style="opacity:0" class="cta_heading">Ada Yang Ingin Disampaikan Berkaitan Dengan Pertanyaan?</h2>
               </div>
             </div>
-            <a href="https://wa.me/000000" data-w-id="48b2d287-b8b5-fe2e-2390-287447e55777" style="opacity:0" class="button-tertiary is-cta-button w-button">Whatsapp Us</a>
-            <a href="mailto:LoremIpsum@dolor.sit" data-w-id="48b2d287-b8b5-fe2e-2390-287447e55777" style="opacity:0" class="button-tertiary is-cta-button w-button">Email Us</a>
+            <a href="https://wa.me/000000" data-w-id="48b2d287-b8b5-fe2e-2390-287447e55777" class="rounded-pill button-tertiary is-cta-button w-button" style="border-radius:0;
+    padding-top: 0;"><div style="    margin: 5% 0px;margin-left: -7%;"> <img class="img-fluid" src="/Assets/1_20220908_160551_0000.png" style ="width:115px;    margin: 0px -20px; "> Whatsapp</div> </a>
+            <a href="mailto:LoremIpsum@dolor.sit" data-w-id="48b2d287-b8b5-fe2e-2390-287447e55777" style="border-radius:0;padding-top: 0; opacity:0" class="rounded-pill button button-tertiary is-cta-button w-button">
+                <div style="    margin: 5% 0px;margin-left: -16%;"> <img class="img-fluid" src="/Assets/2_20220908_160551_0001.png" style ="width:115px;    margin: 0px -20px; ">
+                Email Us
+                </div>
+                </a>
           </div>
         </div>
       </div>

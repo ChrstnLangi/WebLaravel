@@ -49,7 +49,6 @@ return array(
     'App\\Models\\OurTeam' => $baseDir . '/app/Models/OurTeam.php',
     'App\\Models\\Page' => $baseDir . '/app/Models/Page.php',
     'App\\Models\\Post' => $baseDir . '/app/Models/Post.php',
-    'App\\Models\\Posts' => $baseDir . '/app/Models/Posts.php',
     'App\\Models\\Program' => $baseDir . '/app/Models/Program.php',
     'App\\Models\\Review' => $baseDir . '/app/Models/Review.php',
     'App\\Models\\Reviewer' => $baseDir . '/app/Models/Reviewer.php',

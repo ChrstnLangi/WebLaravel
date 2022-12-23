@@ -569,7 +569,6 @@ class ComposerStaticInit32ec056c0eed274c88bab8153f104abc
         'App\\Models\\OurTeam' => __DIR__ . '/../..' . '/app/Models/OurTeam.php',
         'App\\Models\\Page' => __DIR__ . '/../..' . '/app/Models/Page.php',
         'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
-        'App\\Models\\Posts' => __DIR__ . '/../..' . '/app/Models/Posts.php',
         'App\\Models\\Program' => __DIR__ . '/../..' . '/app/Models/Program.php',
         'App\\Models\\Review' => __DIR__ . '/../..' . '/app/Models/Review.php',
         'App\\Models\\Reviewer' => __DIR__ . '/../..' . '/app/Models/Reviewer.php',

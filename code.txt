@@ -192,3 +192,6 @@ for j in range(0, cols*rows):
   plt.imshow(cv2.cvtColor(images[j], cv2.COLOR_BGR2RGB))
   plt.title(le.inverse_transform(y_pred)[j])
 plt.show()
+
+
+sadwadawdaw
